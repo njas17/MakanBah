@@ -12,6 +12,17 @@ var makanbahRouter = require("./routes/makanbah");
 
 var app = express();
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE"),
+    res.header(
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content-Type, Accept"
+    );
+  res.contentType("application/json");
+  next();
+});
+
 // app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
@@ -23,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Serve static files from the React frontend app
 app.use(express.static(path.join(__dirname, "client/build")));
 
-app. use("/makanbah", makanbahRouter); // to get to makanbah tables
+app.use("/makanbah", makanbahRouter); // to get to makanbah tables
 
 // -------------- until here ---------
 
