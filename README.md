@@ -1,7 +1,6 @@
 # restaurant-recommendations
 
-
-
+Makanbah is a restaurant recommendations website, which allows it's users to search for restaurants nearby them and also create a personalised list of their restaurant choices. The name "Makanbah" was derived from the word "Makan", which means "Eat" in the English language, and "bah" from Sabahan slang which is a colloquial words used in Sabah, Malaysia.
 
 
 ## Setup
@@ -24,7 +23,7 @@
   DB_PASS=YOURPASSWORD
 ```
 
-- Run `npm run migrate` in the main folder of this repository, in a new terminal window. This will create a table called 'students' in your database.
+- Run `npm run migrate` in the main folder of this repository, in a new terminal window. This will create a table called 'xxxx' in your database.
 
 ### Development
 
