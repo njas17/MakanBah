@@ -2,43 +2,52 @@
 let express = require("express");
 let router = express.Router();
 const db = require("../model/helper");
-const filePath = ".data/restaurants.js";
 const bodyParser = require("body-parser");
-const app = express();
 const data = require("../data/restaurants.js");
+
+router.use(bodyParser.json());
+
 // const dataTest = require("./data/restaurants.js");
 
 
 
-
-//============================
-// ROUTES
-//============================
-
-// GET restaurant list
-router.get("/", (req, res) => {
+//---------------GET restaurants list-----------------------
+router.get("/", function(req, res, next){
     res.send(data);
     });
 
+//----------POST selected restaurant to bucket list---------
+
+router.post("/addToBucketList", (req, res, next) => {
+    console.log(re, "I'm requesting you");
+    let newRestaurant = req.body.newRestaurant;
+        db(
+            `INSERT INTO makanbah(restaurant) VALUES (${JSON.stringify(
+            newRestaurant)};`
+        )
+            .then(results => {
+            // results.data = results.insertId;
+            // console.log(results.insertId, "is the id, also data \n", results.data)
+            res.send(results);
+            console.log("Successfuly added!");
+            })
+            .catch(err => res.status(500).send(err));
+            console.log("Not found");
+});
 
 
-// router.get("/restaurants/:name", (req, res) => {
-//     console.log("try");
-//     fetch(API)
-//     .then(response => {
-//         console.log(response);
-//         response.json()
-//     })
-//     .then(data => {
-//         console.log(data);
-//         res.send(data);
-//         // this.setState({restaurants:data});
-//     })
-//     .catch(error => {
-//         console.log("Error", error);
-//     });
-//     // res.send("Welcome to the API");
-// });
+//---------PUT restaurant in bucket list------------------
+
+
+//---------DELETE restaurant in bucket list---------------
+// Delete restaurant from bucket list by id
+
+
+
+
+
+
+
 
 
 module.exports = router;

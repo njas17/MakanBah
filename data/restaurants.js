@@ -1,843 +1,841 @@
-// https://maps.googleapis.com/maps/api/place/textsearch/json?query=restaurants+in+Kota+Kinabalu+Malaysia&key=AIzaSyAsM-TE6HjRKxM8Tph0HmDmwyaWgRYSuaM
-
-[
-{
-"business_status": "OPERATIONAL",
-"formatted_address": "Block E, Ground Floor, shop 22, 3, Lorong Singgah Mata 2, Asia City, 88300 Kota Kinabalu, Sabah, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.9775335,
-"lng": 116.0726097
-},
-"viewport": {
-"northeast": {
-"lat": 5.978891529892723,
-"lng": 116.0739474798927
-},
-"southwest": {
-"lat": 5.976191870107279,
-"lng": 116.0712478201072
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-"name": "One To Six Seafood Restaurant",
-"opening_hours": {
-"open_now": true
-},
-"photos": [
-{
-"height": 4032,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/101262757768051432212\">A Google User</a>"
-],
-"photo_reference": "ATtYBwK2nrnhw320SwTAyK-j4cGvoommZby_ogDm-1bthkMQ952CB1WsRzOF3JTT_7QQxquos_MHPpJcXbXB2RzTdkUWaW-zX-YQzWwzCJ8SVdZp1gbv0xYo_A2HPW9yDUMI4M6ac0oNynH4-djXR4FWa3hmYa1hTi0We7EGd8ugG-eUMxtN",
-"width": 3024
-}
-],
-"place_id": "ChIJNa86cTVpOzIRDCja1wZFyYI",
-"plus_code": {
-"compound_code": "X3HF+22 Kota Kinabalu, Sabah",
-"global_code": "6PQRX3HF+22"
-},
-"rating": 4.9,
-"reference": "ChIJNa86cTVpOzIRDCja1wZFyYI",
-"types": [
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 26
-},
-{
-"business_status": "CLOSED_TEMPORARILY",
-"formatted_address": "Jalan Tun Fuad Stephen, Sinsuran Kompleks, 88000 Kota Kinabalu, Sabah, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.980112,
-"lng": 116.071504
-},
-"viewport": {
-"northeast": {
-"lat": 5.981510629892721,
-"lng": 116.0727730798927
-},
-"southwest": {
-"lat": 5.978810970107277,
-"lng": 116.0700734201073
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-"name": "Favola Le Meridien Kota Kinabalu",
-"permanently_closed": true,
-"photos": [
-{
-"height": 2448,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/103548275400193195654\">James Wong</a>"
-],
-"photo_reference": "ATtYBwIiB_EN0DB17z57la0Eb0l9LSoGyM6Ok6a_zlMsvhy6KUuQBCObxnP3_lHoYojTLnHmGDqsngcQf-z5-vVQVBy93IXQaCeDfG0XKfrEnytNFUfKSUQAuHedn2GC4MVSTg4-bqXuSRr7sbmW7zd17U4cO1KAMle59BvVeZfZGQk3KdRR",
-"width": 3264
-}
-],
-"place_id": "ChIJj5CikpFpOzIRfBK2CaTfBt0",
-"plus_code": {
-"compound_code": "X3JC+2J Kota Kinabalu, Sabah",
-"global_code": "6PQRX3JC+2J"
-},
-"rating": 4.5,
-"reference": "ChIJj5CikpFpOzIRfBK2CaTfBt0",
-"types": [
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 31
-},
-{
-"business_status": "OPERATIONAL",
-"formatted_address": "35, Jalan Haji Saman, Pusat Bandar Kota Kinabalu, 88000 Kota Kinabalu, Sabah, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.984337099999999,
-"lng": 116.0761081
-},
-"viewport": {
-"northeast": {
-"lat": 5.985686079892722,
-"lng": 116.0774594798927
-},
-"southwest": {
-"lat": 5.982986420107278,
-"lng": 116.0747598201073
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-"name": "Chilli Vanilla",
-"opening_hours": {
-"open_now": true
-},
-"photos": [
-{
-"height": 3024,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/114567739117150435040\">허근</a>"
-],
-"photo_reference": "ATtYBwIYFrUaygHM-RuD2E_-TCROeCju5unkhGfSG3xYbspdSMdlOsFFHM6ZdZ-fCdwTFcnfn8_PTZFAOhG3vWXV7M6i9Yx0TqwDSmA2QdtG-wfLwVeVSasTDYEvfXri_8DEbv1bOtKH6C485Y1Gxs9tLjuKK7S8V_1-L7o_JbjchJNvxnQY",
-"width": 4032
-}
-],
-"place_id": "ChIJwzu-ZY9pOzIRWvoLGweqNNY",
-"plus_code": {
-"compound_code": "X3MG+PC Kota Kinabalu, Sabah",
-"global_code": "6PQRX3MG+PC"
-},
-"price_level": 2,
-"rating": 4.3,
-"reference": "ChIJwzu-ZY9pOzIRWvoLGweqNNY",
-"types": [
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 506
-},
-{
-"business_status": "OPERATIONAL",
-"formatted_address": "3-G-3, Lorong Api - Api 1, Api-api Centre, 88000 Kota Kinabalu, Sabah, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.9761279,
-"lng": 116.0704886
-},
-"viewport": {
-"northeast": {
-"lat": 5.977487479892722,
-"lng": 116.0718207298927
-},
-"southwest": {
-"lat": 5.974787820107278,
-"lng": 116.0691210701073
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-"name": "Laundroluxe",
-"opening_hours": {
-"open_now": false
-},
-"photos": [
-{
-"height": 3000,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/115490707588920940079\">Yu Sung Cho</a>"
-],
-"photo_reference": "ATtYBwKlewaFeQHxkCyUtP12aYtSf45BuifMFjAnXq6A4XaLHIoO7fVUMTsJVH_T2oPOaWY1TpU81Tn4sr26WeenZ74LKT7mTPwl7nbKrMJ4u7I-lUJ6dBg3Tpz6un2K55umznh2IP4mk5b7EUKp81h-wm9KuP2En_uENBefz29JoPp_iU95",
-"width": 5333
-}
-],
-"place_id": "ChIJxYveGJRpOzIRt79l7Z5ecF0",
-"plus_code": {
-"compound_code": "X3GC+F5 Kota Kinabalu, Sabah",
-"global_code": "6PQRX3GC+F5"
-},
-"price_level": 2,
-"rating": 4.3,
-"reference": "ChIJxYveGJRpOzIRt79l7Z5ecF0",
-"types": [
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 288
-},
-{
-"business_status": "CLOSED_TEMPORARILY",
-"formatted_address": "Lot 15, Anjung Samudera, The Waterfront, 88000 Kota Kinabalu, Sabah, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.9796717,
-"lng": 116.0704534
-},
-"viewport": {
-"northeast": {
-"lat": 5.980958429892722,
-"lng": 116.0718888298927
-},
-"southwest": {
-"lat": 5.978258770107278,
-"lng": 116.0691891701073
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
-"name": "Kismet Bar and Dining 키즈 멧 바와 식당 @kk Waterfront",
-"permanently_closed": true,
-"photos": [
-{
-"height": 1350,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/106730133576536352970\">A Google User</a>"
-],
-"photo_reference": "ATtYBwL3FYD_cuLSmBhoLP3TxZJrDuPMxB2mP-dk5t3xbwK70FkKCT59DNMxNChmrY5ktD8QGwS3lMczvGWCUz3loqZ185MqH5VREAjhiJCnapKsZv4mPQXNEAWQdbGjj4vQ9xIrIBDdDQhA1ppL9U1cuCWeXyJ_yk1512clTN8MtAEZlqin",
-"width": 1080
-}
-],
-"place_id": "ChIJ4aUFyTtpOzIR29-7WSTZ8BU",
-"plus_code": {
-"compound_code": "X3HC+V5 Kota Kinabalu, Sabah",
-"global_code": "6PQRX3HC+V5"
-},
-"rating": 4.8,
-"reference": "ChIJ4aUFyTtpOzIR29-7WSTZ8BU",
-"types": [
-"bar",
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 19
-},
-{
-"business_status": "OPERATIONAL",
-"formatted_address": "32, Jalan Haji Saman, Pusat Bandar, 88000 Kota Kinabalu, Sabah, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.984451,
-"lng": 116.0761771
-},
-"viewport": {
-"northeast": {
-"lat": 5.985802429892722,
-"lng": 116.0775239798927
-},
-"southwest": {
-"lat": 5.983102770107278,
-"lng": 116.0748243201073
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-"name": "El Centro",
-"opening_hours": {
-"open_now": true
-},
-"photos": [
-{
-"height": 3024,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/109891974545700323976\">A Google User</a>"
-],
-"photo_reference": "ATtYBwJ1w44mGNTWwgYii-DvxxM1cdPTStsj2V9jbMHDyMZYYcWYDORJ-_BcAKq4g9EOHbLxjeCsOsKAnkDt9Fg_adCJ9Tz40yI95ZEoSHF5StsLBD9MQgjSA8eJX6o7e5aL7cxeQhF0rcyLN-hgKvAA_zgYHIyw89L76ES6ElZGfdbPlCgn",
-"width": 4032
-}
-],
-"place_id": "ChIJzz4NZo9pOzIRwg8rog5sN2M",
-"plus_code": {
-"compound_code": "X3MG+QF Kota Kinabalu, Sabah",
-"global_code": "6PQRX3MG+QF"
-},
-"price_level": 1,
-"rating": 4.4,
-"reference": "ChIJzz4NZo9pOzIRwg8rog5sN2M",
-"types": [
-"bar",
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 552
-},
-{
-"business_status": "OPERATIONAL",
-"formatted_address": "Lot No. 1-0, Luyang, 1, Lorong Lintas Plaza 4, Lintas Plaza, 88300 Kota Kinabalu, Sabah, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.945870999999999,
-"lng": 116.08856
-},
-"viewport": {
-"northeast": {
-"lat": 5.947164779892722,
-"lng": 116.0898779298928
-},
-"southwest": {
-"lat": 5.944465120107278,
-"lng": 116.0871782701073
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-"name": "Brass Monkey Cafe & Bar",
-"opening_hours": {
-"open_now": false
-},
-"photos": [
-{
-"height": 3264,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/104102951908211598593\">Brass Monkey Cafe &amp; Bar</a>"
-],
-"photo_reference": "ATtYBwK4awi9zX5XyKaGOX6UXLgdT69TAP10GBD95tQkB3FViTqGyExskubSlg2dtpEwonDCnJlyOQmXK4cs5hgANBAT6KVo_FIe7aBxF-INsybnfDp3xAbPRnTM7swqDCEPfVxUd-EePoFcnW3SUNx7OiKGhkcDwY0oEa_z3U2NzOGbZb1F",
-"width": 4928
-}
-],
-"place_id": "ChIJJ31pHlZoOzIRBf8qhqmI8Ko",
-"plus_code": {
-"compound_code": "W3WQ+8C Kota Kinabalu, Sabah",
-"global_code": "6PQRW3WQ+8C"
-},
-"price_level": 3,
-"rating": 4.3,
-"reference": "ChIJJ31pHlZoOzIRBf8qhqmI8Ko",
-"types": [
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 316
-},
-{
-"business_status": "OPERATIONAL",
-"formatted_address": "2nd Floor, Food Court, Wisma Merdeka, Jalan Tun Razak, Pusat Bandar Kota Kinabalu, 88000 Kota Kinabalu, Sabah, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.9855822,
-"lng": 116.0760222
-},
-"viewport": {
-"northeast": {
-"lat": 5.986816329892722,
-"lng": 116.0775816298927
-},
-"southwest": {
-"lat": 5.984116670107278,
-"lng": 116.0748819701073
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-"name": "Vege Garden 素园",
-"opening_hours": {
-"open_now": true
-},
-"photos": [
-{
-"height": 1920,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/104792776853103746974\">SY Hing</a>"
-],
-"photo_reference": "ATtYBwLfYjJ_qozvAdr4PfM_C2zJvtUxmXfGFmpIpoySTBorubiPwUtlh1ikzaMXJZOhZInQ3L8m3YS86vcqcst-392ZFavXXxt6wLgDNuNEAspuNOmlz1bfItEIRu1JbS6lzKcBkddR-XOioXFHvjzfnpvuMVyyZ3YFigEtzM9_9_ggP68",
-"width": 1080
-}
-],
-"place_id": "ChIJkzsHsohpOzIROq6I64Y9LD8",
-"plus_code": {
-"compound_code": "X3PG+6C Kota Kinabalu, Sabah",
-"global_code": "6PQRX3PG+6C"
-},
-"rating": 4.6,
-"reference": "ChIJkzsHsohpOzIROq6I64Y9LD8",
-"types": [
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 25
-},
-{
-"business_status": "OPERATIONAL",
-"formatted_address": "Lot 17 The Waterfront Jalan Tun Fuad Stephens Pusat Bandar Kota Kinabalu Kota Kinabalu Sabah MY 88000, Jalan Tun Fuad Stephen, 88000 Kota Kinabalu, Sabah, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.979488,
-"lng": 116.0704873
-},
-"viewport": {
-"northeast": {
-"lat": 5.980815379892721,
-"lng": 116.0718676298927
-},
-"southwest": {
-"lat": 5.978115720107278,
-"lng": 116.0691679701073
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-"name": "Gusto Food & Wine cucina italiana",
-"opening_hours": {
-"open_now": true
-},
-"photos": [
-{
-"height": 3024,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/100585236363503563768\">Richard Whitcombe</a>"
-],
-"photo_reference": "ATtYBwJ6GkvCzRcoplSavJXo95skS5xeXlOuCu71_9lx9RjIRj5olbllWQ8JSBoXhmRvZ1bZqEEHEBIzd2D4IwByevQxKD0a_vys-TvweIrdR2mA2c5J493WJBWVfHnxfmifCHDPIy8l_mrVQ7CJdjv2qjoz6lvHmlo577tSWdo1MjWzLQG0",
-"width": 4032
-}
-],
-"place_id": "ChIJjZVKJZJpOzIRWbfIcOhwXdI",
-"plus_code": {
-"compound_code": "X3HC+Q5 Kota Kinabalu, Sabah",
-"global_code": "6PQRX3HC+Q5"
-},
-"rating": 4.2,
-"reference": "ChIJjZVKJZJpOzIRWbfIcOhwXdI",
-"types": [
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 179
-},
-{
-"business_status": "OPERATIONAL",
-"formatted_address": "Plaza Shell, Jalan Tunku Abdul Rahman, Pusat Bandar Kota Kinabalu, 88300 Kota Kinabalu, Sabah, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.977044100000001,
-"lng": 116.0748901
-},
-"viewport": {
-"northeast": {
-"lat": 5.978410979892722,
-"lng": 116.0763111798927
-},
-"southwest": {
-"lat": 5.975711320107278,
-"lng": 116.0736115201073
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-"name": "CHUBS",
-"opening_hours": {
-"open_now": true
-},
-"photos": [
-{
-"height": 1280,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/116327075114954552113\">Karamunsing Capital</a>"
-],
-"photo_reference": "ATtYBwI5-Og1Ym5oGiea3eCKuY--K-SJG8ey28VleToCOtRJj7TARrIp1v3jrO4zApzC8uved_jwnZzU7aQd-WhhdNz1rCdbXyPfOCFEcO2hvDuTQGoTR3ILrhMqMjGarva7KrrX1bGd-Bpc8wE9-EY2I65iTBg_u0EbwCZRTohXgjdeonRA",
-"width": 1920
-}
-],
-"place_id": "ChIJVXhBs6JpOzIR1_fg06wJfY8",
-"plus_code": {
-"compound_code": "X3GF+RX Kota Kinabalu, Sabah",
-"global_code": "6PQRX3GF+RX"
-},
-"price_level": 2,
-"rating": 4.4,
-"reference": "ChIJVXhBs6JpOzIR1_fg06wJfY8",
-"types": [
-"bar",
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 862
-},
-{
-"business_status": "OPERATIONAL",
-"formatted_address": "Kota Kinabalu, 88000 Kota Kinabalu, Sabah, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.9792093,
-"lng": 116.0698291
-},
-"viewport": {
-"northeast": {
-"lat": 5.980468729892721,
-"lng": 116.0712894798927
-},
-"southwest": {
-"lat": 5.977769070107278,
-"lng": 116.0685898201073
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-"name": "KK Waterfront",
-"opening_hours": {
-"open_now": false
-},
-"photos": [
-{
-"height": 3024,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/101432646435200111464\">이정섭</a>"
-],
-"photo_reference": "ATtYBwKL2xKThL3XQe9R8f5Ir5TPEswo0R8sIuliHIZd8P6MvTo45zRT92Vk3mLxQDJ9sIK_6HxiRs0itEzfDuhEg9cdOVhJoHsFQec4uD1XGa2cywKTSJeET65os3c2qu-RXjK9vIsG1y5UyLzbjWKRNB0MHl_I7ePsbNt1TJBFm9meZzkd",
-"width": 4032
-}
-],
-"place_id": "ChIJgY6SMZJpOzIR0-2MreF6hDA",
-"plus_code": {
-"compound_code": "X3H9+MW Kota Kinabalu, Sabah",
-"global_code": "6PQRX3H9+MW"
-},
-"price_level": 2,
-"rating": 4.2,
-"reference": "ChIJgY6SMZJpOzIR0-2MreF6hDA",
-"types": [
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 1325
-},
-{
-"business_status": "OPERATIONAL",
-"formatted_address": "127, Jalan Gaya, Pusat Bandar Kota Kinabalu, 88000 Kota Kinabalu, Sabah, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.982365,
-"lng": 116.076529
-},
-"viewport": {
-"northeast": {
-"lat": 5.983744329892723,
-"lng": 116.0778197798927
-},
-"southwest": {
-"lat": 5.981044670107279,
-"lng": 116.0751201201073
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-"name": "Yee Fung Laksa",
-"opening_hours": {
-"open_now": true
-},
-"photos": [
-{
-"height": 3096,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/109080747040236514988\">voon vachel</a>"
-],
-"photo_reference": "ATtYBwKnjJnZwvAtVZcB09LKsb5kdimUzKXl09qxhmQ4R5itxGGf1D9wCpFPXFeRj7NRgJADPf0OF-KJ6ifZaNrbweZop3SRN6SJPFgb2fu12KXEAo99RQLVe6hFMfnfBH0nNBMsMpuA_53S_DTerq7umidab4lLKbsY38ApnZDSTD96j-kP",
-"width": 5504
-}
-],
-"place_id": "ChIJ4d6vjI9pOzIRDUVH5gLGGBw",
-"plus_code": {
-"compound_code": "X3JG+WJ Kota Kinabalu, Sabah",
-"global_code": "6PQRX3JG+WJ"
-},
-"price_level": 2,
-"rating": 4.2,
-"reference": "ChIJ4d6vjI9pOzIRDUVH5gLGGBw",
-"types": [
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 2176
-},
-{
-"business_status": "OPERATIONAL",
-"formatted_address": "Lot 13, Jalan Tun Fuad Stephens, Pusat Bandar Kota Kinabalu, 88000 Kota Kinabalu, Sabah, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.9794149,
-"lng": 116.070233
-},
-"viewport": {
-"northeast": {
-"lat": 5.980687329892723,
-"lng": 116.0716122298928
-},
-"southwest": {
-"lat": 5.977987670107279,
-"lng": 116.0689125701073
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-"name": "Mai Yai Thai Orchid Restaurant",
-"opening_hours": {
-"open_now": true
-},
-"photos": [
-{
-"height": 3016,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/103280709832165576750\">Sean Jung</a>"
-],
-"photo_reference": "ATtYBwKbP82yK4a8ehXeTWy2aK4fET5EqngOEvW20dAI1YBivs_BQrJnpfq1vQnsB-kWxFDWHmpFEHTUrDG-S_FawlqvtD-HO8bf1klRmnX45SmCQ6bEc9EuKX5x99zCp5_iN72RlM5NWaBA6qHC_wZW2KJoOOlyl24SSRk9lARtel8dnM0k",
-"width": 4032
-}
-],
-"place_id": "ChIJ8yYsLpJpOzIRBcbgD0udd-Q",
-"plus_code": {
-"compound_code": "X3HC+Q3 Kota Kinabalu, Sabah",
-"global_code": "6PQRX3HC+Q3"
-},
-"price_level": 2,
-"rating": 4,
-"reference": "ChIJ8yYsLpJpOzIRBcbgD0udd-Q",
-"types": [
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 192
-},
-{
-"business_status": "OPERATIONAL",
-"formatted_address": "20 Jalan Aru, Tanjung Aru, 88100 Kota Kinabalu, KK, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.9560742,
-"lng": 116.042656
-},
-"viewport": {
-"northeast": {
-"lat": 5.957304979892722,
-"lng": 116.0441236798927
-},
-"southwest": {
-"lat": 5.954605320107278,
-"lng": 116.0414240201073
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-"name": "Shang Palace",
-"photos": [
-{
-"height": 3024,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/105800222591157681312\">Alexx Choi</a>"
-],
-"photo_reference": "ATtYBwLmTQuhzyfaB_tq1qEpxEDXKqQlc2Q7CSPP7GKvs7EtzNOJ5cLuTT3NG9uQpxzol1RSCFSdKKKTnAc9ihWEOblS2jdXor7mk1ETu30MK_oKcYKCUuwc3BYRgYpPv3NnEFDOibVFXznD7hgPX3CbD4IZNNmL2qg7rHv14o8ijrwwDqWX",
-"width": 3024
-}
-],
-"place_id": "ChIJAAAAAAAAAAARb4-ecTFt3aI",
-"plus_code": {
-"compound_code": "X24V+C3 Kota Kinabalu, Sabah",
-"global_code": "6PQRX24V+C3"
-},
-"rating": 4.3,
-"reference": "ChIJAAAAAAAAAAARb4-ecTFt3aI",
-"types": [
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 69
-},
-{
-"business_status": "OPERATIONAL",
-"formatted_address": "G/F, No. 28, Jalan Berjaya, Bandat Berjaya, 88000 Kota Kinabalu, Sabah, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.9768504,
-"lng": 116.0763242
-},
-"viewport": {
-"northeast": {
-"lat": 5.978252879892722,
-"lng": 116.0776666298927
-},
-"southwest": {
-"lat": 5.975553220107278,
-"lng": 116.0749669701073
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-"name": "Sri Latha Curry House",
-"opening_hours": {
-"open_now": true
-},
-"photos": [
-{
-"height": 2976,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/114313138133839819836\">CP NG</a>"
-],
-"photo_reference": "ATtYBwJztZ5fRPa7mBQf0jKAT2pcL7bPN0RL0EFmyt3X6wlO_xMsyqe2SpI0BBOkzlCmxpO1_DXpqbzOCaZ2vq-koQlrKqQBo2Vy9N-IvXCsNsX6e3dmKYDlOQTx8ELWky-3ngkCOi7pl2Gp0y4Dl-Np44NXLKbRojx3Y66Ilep8KS1wTq7_",
-"width": 3968
-}
-],
-"place_id": "ChIJFwh2r5BpOzIRttlTaevVxnc",
-"plus_code": {
-"compound_code": "X3GG+PG Kota Kinabalu, Sabah",
-"global_code": "6PQRX3GG+PG"
-},
-"price_level": 2,
-"rating": 4.2,
-"reference": "ChIJFwh2r5BpOzIRttlTaevVxnc",
-"types": [
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 725
-},
-{
-"business_status": "OPERATIONAL",
-"formatted_address": "G-23A & G-25, Oceanus Waterfront Mall, Jalan Tun Fuad Stephens, 88000 Kota Kinabalu, Sabah, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.977392999999999,
-"lng": 116.0692192
-},
-"viewport": {
-"northeast": {
-"lat": 5.978739879892722,
-"lng": 116.0705733798927
-},
-"southwest": {
-"lat": 5.976040220107278,
-"lng": 116.0678737201072
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-"name": "Sakagura Japanese Restaurant",
-"opening_hours": {
-"open_now": true
-},
-"photos": [
-{
-"height": 3024,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/117594767654576986116\">이우진</a>"
-],
-"photo_reference": "ATtYBwKLWeZk0GRYpJb8iBEDk1uj0INO4N0VfkZAdQSe1QiJCyo94u2z9FhW6cJAjFm452j1XLcIgLs9rbf5-Iftn3OjwWvgZjR6L0xxOc4Q9VojjIPn-FuMwveUAunsrks7T-5NDO0bfV6VaNu8OFkxKXdxn5liPiUsiFbnQsM_LjltGGeH",
-"width": 4032
-}
-],
-"place_id": "ChIJhfWLfJRpOzIRT8DS-B102T4",
-"plus_code": {
-"compound_code": "X3G9+XM Kota Kinabalu, Sabah",
-"global_code": "6PQRX3G9+XM"
-},
-"rating": 4.3,
-"reference": "ChIJhfWLfJRpOzIRT8DS-B102T4",
-"types": [
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 168
-},
-{
-"business_status": "OPERATIONAL",
-"formatted_address": "Segama Complex, Jalan Tun Razak, Pusat Bandar Kota Kinabalu, 88000 Kota Kinabalu, Sabah, Malaysia",
-"geometry": {
-"location": {
-"lat": 5.984327,
-"lng": 116.074286
-},
-"viewport": {
-"northeast": {
-"lat": 5.985656379892721,
-"lng": 116.0756717798927
-},
-"southwest": {
-"lat": 5.982956720107278,
-"lng": 116.0729721201073
-}
-}
-},
-"icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-"name": "Seremban Seafood Restaurant",
-"opening_hours": {
-"open_now": false
-},
-"photos": [
-{
-"height": 2988,
-"html_attributions": [
-"<a href=\"https://maps.google.com/maps/contrib/104500109590953931929\">廉政组织</a>"
-],
-"photo_reference": "ATtYBwKNqLlYi39YG7_QFkhv471tLmKURBMC2NWV9d5WrjOPfW3FG9I_je_RCSG_y9T7dcOXY2LJ7ag3xWXnxjfCd-AHyxj1_MjWwzHd-nU-lS8VHX7LQqfGT-aDfrWDwG56__hjlBlWktvTzz_JTnh9sApM0dz-VWGGHgSdK6LIS15DpgMt",
-"width": 5312
-}
-],
-"place_id": "ChIJqbd-G49pOzIRq_y0ZzgKnFY",
-"plus_code": {
-"compound_code": "X3MF+PP Kota Kinabalu, Sabah",
-"global_code": "6PQRX3MF+PP"
-},
-"price_level": 3,
-"rating": 4.2,
-"reference": "ChIJqbd-G49pOzIRq_y0ZzgKnFY",
-"types": [
-"restaurant",
-"food",
-"point_of_interest",
-"establishment"
-],
-"user_ratings_total": 354
-}
+module.exports =[
+    {
+            "business_status":"OPERATIONAL",
+            "formatted_address":"Block E, Ground Floor, shop 22, 3, Lorong Singgah Mata 2, Asia City, 88300 Kota Kinabalu, Sabah, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.9775335,
+                    "lng":116.0726097
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.978891529892723,
+                    "lng":116.0739474798927
+                    },
+                    "southwest":{
+                    "lat":5.976191870107279,
+                    "lng":116.0712478201072
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name":"One To Six Seafood Restaurant",
+            "opening_hours":{
+                "open_now":true
+            },
+            "photos":[
+                {
+                    "height":4032,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/101262757768051432212\">A Google User</a>"
+                    ],
+                    "photo_reference":"ATtYBwK2nrnhw320SwTAyK-j4cGvoommZby_ogDm-1bthkMQ952CB1WsRzOF3JTT_7QQxquos_MHPpJcXbXB2RzTdkUWaW-zX-YQzWwzCJ8SVdZp1gbv0xYo_A2HPW9yDUMI4M6ac0oNynH4-djXR4FWa3hmYa1hTi0We7EGd8ugG-eUMxtN",
+                    "width":3024
+                }
+            ],
+            "place_id":"ChIJNa86cTVpOzIRDCja1wZFyYI",
+            "plus_code":{
+                "compound_code":"X3HF+22 Kota Kinabalu, Sabah",
+                "global_code":"6PQRX3HF+22"
+            },
+            "rating":4.9,
+            "reference":"ChIJNa86cTVpOzIRDCja1wZFyYI",
+            "types":[
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":26
+        },
+        {
+            "business_status":"CLOSED_TEMPORARILY",
+            "formatted_address":"Jalan Tun Fuad Stephen, Sinsuran Kompleks, 88000 Kota Kinabalu, Sabah, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.980112,
+                    "lng":116.071504
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.981510629892721,
+                    "lng":116.0727730798927
+                    },
+                    "southwest":{
+                    "lat":5.978810970107277,
+                    "lng":116.0700734201073
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name":"Favola Le Meridien Kota Kinabalu",
+            "permanently_closed":true,
+            "photos":[
+                {
+                    "height":2448,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/103548275400193195654\">James Wong</a>"
+                    ],
+                    "photo_reference":"ATtYBwIiB_EN0DB17z57la0Eb0l9LSoGyM6Ok6a_zlMsvhy6KUuQBCObxnP3_lHoYojTLnHmGDqsngcQf-z5-vVQVBy93IXQaCeDfG0XKfrEnytNFUfKSUQAuHedn2GC4MVSTg4-bqXuSRr7sbmW7zd17U4cO1KAMle59BvVeZfZGQk3KdRR",
+                    "width":3264
+                }
+            ],
+            "place_id":"ChIJj5CikpFpOzIRfBK2CaTfBt0",
+            "plus_code":{
+                "compound_code":"X3JC+2J Kota Kinabalu, Sabah",
+                "global_code":"6PQRX3JC+2J"
+            },
+            "rating":4.5,
+            "reference":"ChIJj5CikpFpOzIRfBK2CaTfBt0",
+            "types":[
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":31
+        },
+        {
+            "business_status":"OPERATIONAL",
+            "formatted_address":"35, Jalan Haji Saman, Pusat Bandar Kota Kinabalu, 88000 Kota Kinabalu, Sabah, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.984337099999999,
+                    "lng":116.0761081
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.985686079892722,
+                    "lng":116.0774594798927
+                    },
+                    "southwest":{
+                    "lat":5.982986420107278,
+                    "lng":116.0747598201073
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name":"Chilli Vanilla",
+            "opening_hours":{
+                "open_now":true
+            },
+            "photos":[
+                {
+                    "height":3024,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/114567739117150435040\">허근</a>"
+                    ],
+                    "photo_reference":"ATtYBwIYFrUaygHM-RuD2E_-TCROeCju5unkhGfSG3xYbspdSMdlOsFFHM6ZdZ-fCdwTFcnfn8_PTZFAOhG3vWXV7M6i9Yx0TqwDSmA2QdtG-wfLwVeVSasTDYEvfXri_8DEbv1bOtKH6C485Y1Gxs9tLjuKK7S8V_1-L7o_JbjchJNvxnQY",
+                    "width":4032
+                }
+            ],
+            "place_id":"ChIJwzu-ZY9pOzIRWvoLGweqNNY",
+            "plus_code":{
+                "compound_code":"X3MG+PC Kota Kinabalu, Sabah",
+                "global_code":"6PQRX3MG+PC"
+            },
+            "price_level":2,
+            "rating":4.3,
+            "reference":"ChIJwzu-ZY9pOzIRWvoLGweqNNY",
+            "types":[
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":506
+        },
+        {
+            "business_status":"OPERATIONAL",
+            "formatted_address":"3-G-3, Lorong Api - Api 1, Api-api Centre, 88000 Kota Kinabalu, Sabah, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.9761279,
+                    "lng":116.0704886
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.977487479892722,
+                    "lng":116.0718207298927
+                    },
+                    "southwest":{
+                    "lat":5.974787820107278,
+                    "lng":116.0691210701073
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name":"Laundroluxe",
+            "opening_hours":{
+                "open_now":false
+            },
+            "photos":[
+                {
+                    "height":3000,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/115490707588920940079\">Yu Sung Cho</a>"
+                    ],
+                    "photo_reference":"ATtYBwKlewaFeQHxkCyUtP12aYtSf45BuifMFjAnXq6A4XaLHIoO7fVUMTsJVH_T2oPOaWY1TpU81Tn4sr26WeenZ74LKT7mTPwl7nbKrMJ4u7I-lUJ6dBg3Tpz6un2K55umznh2IP4mk5b7EUKp81h-wm9KuP2En_uENBefz29JoPp_iU95",
+                    "width":5333
+                }
+            ],
+            "place_id":"ChIJxYveGJRpOzIRt79l7Z5ecF0",
+            "plus_code":{
+                "compound_code":"X3GC+F5 Kota Kinabalu, Sabah",
+                "global_code":"6PQRX3GC+F5"
+            },
+            "price_level":2,
+            "rating":4.3,
+            "reference":"ChIJxYveGJRpOzIRt79l7Z5ecF0",
+            "types":[
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":288
+        },
+        {
+            "business_status":"CLOSED_TEMPORARILY",
+            "formatted_address":"Lot 15, Anjung Samudera, The Waterfront, 88000 Kota Kinabalu, Sabah, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.9796717,
+                    "lng":116.0704534
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.980958429892722,
+                    "lng":116.0718888298927
+                    },
+                    "southwest":{
+                    "lat":5.978258770107278,
+                    "lng":116.0691891701073
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+            "name":"Kismet Bar and Dining 키즈 멧 바와 식당 @kk Waterfront",
+            "permanently_closed":true,
+            "photos":[
+                {
+                    "height":1350,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/106730133576536352970\">A Google User</a>"
+                    ],
+                    "photo_reference":"ATtYBwL3FYD_cuLSmBhoLP3TxZJrDuPMxB2mP-dk5t3xbwK70FkKCT59DNMxNChmrY5ktD8QGwS3lMczvGWCUz3loqZ185MqH5VREAjhiJCnapKsZv4mPQXNEAWQdbGjj4vQ9xIrIBDdDQhA1ppL9U1cuCWeXyJ_yk1512clTN8MtAEZlqin",
+                    "width":1080
+                }
+            ],
+            "place_id":"ChIJ4aUFyTtpOzIR29-7WSTZ8BU",
+            "plus_code":{
+                "compound_code":"X3HC+V5 Kota Kinabalu, Sabah",
+                "global_code":"6PQRX3HC+V5"
+            },
+            "rating":4.8,
+            "reference":"ChIJ4aUFyTtpOzIR29-7WSTZ8BU",
+            "types":[
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":19
+        },
+        {
+            "business_status":"OPERATIONAL",
+            "formatted_address":"32, Jalan Haji Saman, Pusat Bandar, 88000 Kota Kinabalu, Sabah, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.984451,
+                    "lng":116.0761771
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.985802429892722,
+                    "lng":116.0775239798927
+                    },
+                    "southwest":{
+                    "lat":5.983102770107278,
+                    "lng":116.0748243201073
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name":"El Centro",
+            "opening_hours":{
+                "open_now":true
+            },
+            "photos":[
+                {
+                    "height":3024,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/109891974545700323976\">A Google User</a>"
+                    ],
+                    "photo_reference":"ATtYBwJ1w44mGNTWwgYii-DvxxM1cdPTStsj2V9jbMHDyMZYYcWYDORJ-_BcAKq4g9EOHbLxjeCsOsKAnkDt9Fg_adCJ9Tz40yI95ZEoSHF5StsLBD9MQgjSA8eJX6o7e5aL7cxeQhF0rcyLN-hgKvAA_zgYHIyw89L76ES6ElZGfdbPlCgn",
+                    "width":4032
+                }
+            ],
+            "place_id":"ChIJzz4NZo9pOzIRwg8rog5sN2M",
+            "plus_code":{
+                "compound_code":"X3MG+QF Kota Kinabalu, Sabah",
+                "global_code":"6PQRX3MG+QF"
+            },
+            "price_level":1,
+            "rating":4.4,
+            "reference":"ChIJzz4NZo9pOzIRwg8rog5sN2M",
+            "types":[
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":552
+        },
+        {
+            "business_status":"OPERATIONAL",
+            "formatted_address":"Lot No. 1-0, Luyang, 1, Lorong Lintas Plaza 4, Lintas Plaza, 88300 Kota Kinabalu, Sabah, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.945870999999999,
+                    "lng":116.08856
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.947164779892722,
+                    "lng":116.0898779298928
+                    },
+                    "southwest":{
+                    "lat":5.944465120107278,
+                    "lng":116.0871782701073
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name":"Brass Monkey Cafe & Bar",
+            "opening_hours":{
+                "open_now":false
+            },
+            "photos":[
+                {
+                    "height":3264,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/104102951908211598593\">Brass Monkey Cafe &amp; Bar</a>"
+                    ],
+                    "photo_reference":"ATtYBwK4awi9zX5XyKaGOX6UXLgdT69TAP10GBD95tQkB3FViTqGyExskubSlg2dtpEwonDCnJlyOQmXK4cs5hgANBAT6KVo_FIe7aBxF-INsybnfDp3xAbPRnTM7swqDCEPfVxUd-EePoFcnW3SUNx7OiKGhkcDwY0oEa_z3U2NzOGbZb1F",
+                    "width":4928
+                }
+            ],
+            "place_id":"ChIJJ31pHlZoOzIRBf8qhqmI8Ko",
+            "plus_code":{
+                "compound_code":"W3WQ+8C Kota Kinabalu, Sabah",
+                "global_code":"6PQRW3WQ+8C"
+            },
+            "price_level":3,
+            "rating":4.3,
+            "reference":"ChIJJ31pHlZoOzIRBf8qhqmI8Ko",
+            "types":[
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":316
+        },
+        {
+            "business_status":"OPERATIONAL",
+            "formatted_address":"2nd Floor, Food Court, Wisma Merdeka, Jalan Tun Razak, Pusat Bandar Kota Kinabalu, 88000 Kota Kinabalu, Sabah, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.9855822,
+                    "lng":116.0760222
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.986816329892722,
+                    "lng":116.0775816298927
+                    },
+                    "southwest":{
+                    "lat":5.984116670107278,
+                    "lng":116.0748819701073
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name":"Vege Garden 素园",
+            "opening_hours":{
+                "open_now":true
+            },
+            "photos":[
+                {
+                    "height":1920,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/104792776853103746974\">SY Hing</a>"
+                    ],
+                    "photo_reference":"ATtYBwLfYjJ_qozvAdr4PfM_C2zJvtUxmXfGFmpIpoySTBorubiPwUtlh1ikzaMXJZOhZInQ3L8m3YS86vcqcst-392ZFavXXxt6wLgDNuNEAspuNOmlz1bfItEIRu1JbS6lzKcBkddR-XOioXFHvjzfnpvuMVyyZ3YFigEtzM9_9_ggP68",
+                    "width":1080
+                }
+            ],
+            "place_id":"ChIJkzsHsohpOzIROq6I64Y9LD8",
+            "plus_code":{
+                "compound_code":"X3PG+6C Kota Kinabalu, Sabah",
+                "global_code":"6PQRX3PG+6C"
+            },
+            "rating":4.6,
+            "reference":"ChIJkzsHsohpOzIROq6I64Y9LD8",
+            "types":[
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":25
+        },
+        {
+            "business_status":"OPERATIONAL",
+            "formatted_address":"Lot 17 The Waterfront Jalan Tun Fuad Stephens Pusat Bandar Kota Kinabalu Kota Kinabalu Sabah MY 88000, Jalan Tun Fuad Stephen, 88000 Kota Kinabalu, Sabah, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.979488,
+                    "lng":116.0704873
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.980815379892721,
+                    "lng":116.0718676298927
+                    },
+                    "southwest":{
+                    "lat":5.978115720107278,
+                    "lng":116.0691679701073
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name":"Gusto Food & Wine cucina italiana",
+            "opening_hours":{
+                "open_now":true
+            },
+            "photos":[
+                {
+                    "height":3024,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/100585236363503563768\">Richard Whitcombe</a>"
+                    ],
+                    "photo_reference":"ATtYBwJ6GkvCzRcoplSavJXo95skS5xeXlOuCu71_9lx9RjIRj5olbllWQ8JSBoXhmRvZ1bZqEEHEBIzd2D4IwByevQxKD0a_vys-TvweIrdR2mA2c5J493WJBWVfHnxfmifCHDPIy8l_mrVQ7CJdjv2qjoz6lvHmlo577tSWdo1MjWzLQG0",
+                    "width":4032
+                }
+            ],
+            "place_id":"ChIJjZVKJZJpOzIRWbfIcOhwXdI",
+            "plus_code":{
+                "compound_code":"X3HC+Q5 Kota Kinabalu, Sabah",
+                "global_code":"6PQRX3HC+Q5"
+            },
+            "rating":4.2,
+            "reference":"ChIJjZVKJZJpOzIRWbfIcOhwXdI",
+            "types":[
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":179
+        },
+        {
+            "business_status":"OPERATIONAL",
+            "formatted_address":"Plaza Shell, Jalan Tunku Abdul Rahman, Pusat Bandar Kota Kinabalu, 88300 Kota Kinabalu, Sabah, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.977044100000001,
+                    "lng":116.0748901
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.978410979892722,
+                    "lng":116.0763111798927
+                    },
+                    "southwest":{
+                    "lat":5.975711320107278,
+                    "lng":116.0736115201073
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name":"CHUBS",
+            "opening_hours":{
+                "open_now":true
+            },
+            "photos":[
+                {
+                    "height":1280,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/116327075114954552113\">Karamunsing Capital</a>"
+                    ],
+                    "photo_reference":"ATtYBwI5-Og1Ym5oGiea3eCKuY--K-SJG8ey28VleToCOtRJj7TARrIp1v3jrO4zApzC8uved_jwnZzU7aQd-WhhdNz1rCdbXyPfOCFEcO2hvDuTQGoTR3ILrhMqMjGarva7KrrX1bGd-Bpc8wE9-EY2I65iTBg_u0EbwCZRTohXgjdeonRA",
+                    "width":1920
+                }
+            ],
+            "place_id":"ChIJVXhBs6JpOzIR1_fg06wJfY8",
+            "plus_code":{
+                "compound_code":"X3GF+RX Kota Kinabalu, Sabah",
+                "global_code":"6PQRX3GF+RX"
+            },
+            "price_level":2,
+            "rating":4.4,
+            "reference":"ChIJVXhBs6JpOzIR1_fg06wJfY8",
+            "types":[
+                "bar",
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":862
+        },
+        {
+            "business_status":"OPERATIONAL",
+            "formatted_address":"Kota Kinabalu, 88000 Kota Kinabalu, Sabah, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.9792093,
+                    "lng":116.0698291
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.980468729892721,
+                    "lng":116.0712894798927
+                    },
+                    "southwest":{
+                    "lat":5.977769070107278,
+                    "lng":116.0685898201073
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name":"KK Waterfront",
+            "opening_hours":{
+                "open_now":false
+            },
+            "photos":[
+                {
+                    "height":3024,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/101432646435200111464\">이정섭</a>"
+                    ],
+                    "photo_reference":"ATtYBwKL2xKThL3XQe9R8f5Ir5TPEswo0R8sIuliHIZd8P6MvTo45zRT92Vk3mLxQDJ9sIK_6HxiRs0itEzfDuhEg9cdOVhJoHsFQec4uD1XGa2cywKTSJeET65os3c2qu-RXjK9vIsG1y5UyLzbjWKRNB0MHl_I7ePsbNt1TJBFm9meZzkd",
+                    "width":4032
+                }
+            ],
+            "place_id":"ChIJgY6SMZJpOzIR0-2MreF6hDA",
+            "plus_code":{
+                "compound_code":"X3H9+MW Kota Kinabalu, Sabah",
+                "global_code":"6PQRX3H9+MW"
+            },
+            "price_level":2,
+            "rating":4.2,
+            "reference":"ChIJgY6SMZJpOzIR0-2MreF6hDA",
+            "types":[
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":1325
+        },
+        {
+            "business_status":"OPERATIONAL",
+            "formatted_address":"127, Jalan Gaya, Pusat Bandar Kota Kinabalu, 88000 Kota Kinabalu, Sabah, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.982365,
+                    "lng":116.076529
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.983744329892723,
+                    "lng":116.0778197798927
+                    },
+                    "southwest":{
+                    "lat":5.981044670107279,
+                    "lng":116.0751201201073
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name":"Yee Fung Laksa",
+            "opening_hours":{
+                "open_now":true
+            },
+            "photos":[
+                {
+                    "height":3096,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/109080747040236514988\">voon vachel</a>"
+                    ],
+                    "photo_reference":"ATtYBwKnjJnZwvAtVZcB09LKsb5kdimUzKXl09qxhmQ4R5itxGGf1D9wCpFPXFeRj7NRgJADPf0OF-KJ6ifZaNrbweZop3SRN6SJPFgb2fu12KXEAo99RQLVe6hFMfnfBH0nNBMsMpuA_53S_DTerq7umidab4lLKbsY38ApnZDSTD96j-kP",
+                    "width":5504
+                }
+            ],
+            "place_id":"ChIJ4d6vjI9pOzIRDUVH5gLGGBw",
+            "plus_code":{
+                "compound_code":"X3JG+WJ Kota Kinabalu, Sabah",
+                "global_code":"6PQRX3JG+WJ"
+            },
+            "price_level":2,
+            "rating":4.2,
+            "reference":"ChIJ4d6vjI9pOzIRDUVH5gLGGBw",
+            "types":[
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":2176
+        },
+        {
+            "business_status":"OPERATIONAL",
+            "formatted_address":"Lot 13, Jalan Tun Fuad Stephens, Pusat Bandar Kota Kinabalu, 88000 Kota Kinabalu, Sabah, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.9794149,
+                    "lng":116.070233
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.980687329892723,
+                    "lng":116.0716122298928
+                    },
+                    "southwest":{
+                    "lat":5.977987670107279,
+                    "lng":116.0689125701073
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name":"Mai Yai Thai Orchid Restaurant",
+            "opening_hours":{
+                "open_now":true
+            },
+            "photos":[
+                {
+                    "height":3016,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/103280709832165576750\">Sean Jung</a>"
+                    ],
+                    "photo_reference":"ATtYBwKbP82yK4a8ehXeTWy2aK4fET5EqngOEvW20dAI1YBivs_BQrJnpfq1vQnsB-kWxFDWHmpFEHTUrDG-S_FawlqvtD-HO8bf1klRmnX45SmCQ6bEc9EuKX5x99zCp5_iN72RlM5NWaBA6qHC_wZW2KJoOOlyl24SSRk9lARtel8dnM0k",
+                    "width":4032
+                }
+            ],
+            "place_id":"ChIJ8yYsLpJpOzIRBcbgD0udd-Q",
+            "plus_code":{
+                "compound_code":"X3HC+Q3 Kota Kinabalu, Sabah",
+                "global_code":"6PQRX3HC+Q3"
+            },
+            "price_level":2,
+            "rating":4,
+            "reference":"ChIJ8yYsLpJpOzIRBcbgD0udd-Q",
+            "types":[
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":192
+        },
+        {
+            "business_status":"OPERATIONAL",
+            "formatted_address":"20 Jalan Aru, Tanjung Aru, 88100 Kota Kinabalu, KK, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.9560742,
+                    "lng":116.042656
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.957304979892722,
+                    "lng":116.0441236798927
+                    },
+                    "southwest":{
+                    "lat":5.954605320107278,
+                    "lng":116.0414240201073
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name":"Shang Palace",
+            "photos":[
+                {
+                    "height":3024,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/105800222591157681312\">Alexx Choi</a>"
+                    ],
+                    "photo_reference":"ATtYBwLmTQuhzyfaB_tq1qEpxEDXKqQlc2Q7CSPP7GKvs7EtzNOJ5cLuTT3NG9uQpxzol1RSCFSdKKKTnAc9ihWEOblS2jdXor7mk1ETu30MK_oKcYKCUuwc3BYRgYpPv3NnEFDOibVFXznD7hgPX3CbD4IZNNmL2qg7rHv14o8ijrwwDqWX",
+                    "width":3024
+                }
+            ],
+            "place_id":"ChIJAAAAAAAAAAARb4-ecTFt3aI",
+            "plus_code":{
+                "compound_code":"X24V+C3 Kota Kinabalu, Sabah",
+                "global_code":"6PQRX24V+C3"
+            },
+            "rating":4.3,
+            "reference":"ChIJAAAAAAAAAAARb4-ecTFt3aI",
+            "types":[
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":69
+        },
+        {
+            "business_status":"OPERATIONAL",
+            "formatted_address":"G/F, No. 28, Jalan Berjaya, Bandat Berjaya, 88000 Kota Kinabalu, Sabah, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.9768504,
+                    "lng":116.0763242
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.978252879892722,
+                    "lng":116.0776666298927
+                    },
+                    "southwest":{
+                    "lat":5.975553220107278,
+                    "lng":116.0749669701073
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name":"Sri Latha Curry House",
+            "opening_hours":{
+                "open_now":true
+            },
+            "photos":[
+                {
+                    "height":2976,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/114313138133839819836\">CP NG</a>"
+                    ],
+                    "photo_reference":"ATtYBwJztZ5fRPa7mBQf0jKAT2pcL7bPN0RL0EFmyt3X6wlO_xMsyqe2SpI0BBOkzlCmxpO1_DXpqbzOCaZ2vq-koQlrKqQBo2Vy9N-IvXCsNsX6e3dmKYDlOQTx8ELWky-3ngkCOi7pl2Gp0y4Dl-Np44NXLKbRojx3Y66Ilep8KS1wTq7_",
+                    "width":3968
+                }
+            ],
+            "place_id":"ChIJFwh2r5BpOzIRttlTaevVxnc",
+            "plus_code":{
+                "compound_code":"X3GG+PG Kota Kinabalu, Sabah",
+                "global_code":"6PQRX3GG+PG"
+            },
+            "price_level":2,
+            "rating":4.2,
+            "reference":"ChIJFwh2r5BpOzIRttlTaevVxnc",
+            "types":[
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":725
+        },
+        {
+            "business_status":"OPERATIONAL",
+            "formatted_address":"G-23A & G-25, Oceanus Waterfront Mall, Jalan Tun Fuad Stephens, 88000 Kota Kinabalu, Sabah, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.977392999999999,
+                    "lng":116.0692192
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.978739879892722,
+                    "lng":116.0705733798927
+                    },
+                    "southwest":{
+                    "lat":5.976040220107278,
+                    "lng":116.0678737201072
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name":"Sakagura Japanese Restaurant",
+            "opening_hours":{
+                "open_now":true
+            },
+            "photos":[
+                {
+                    "height":3024,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/117594767654576986116\">이우진</a>"
+                    ],
+                    "photo_reference":"ATtYBwKLWeZk0GRYpJb8iBEDk1uj0INO4N0VfkZAdQSe1QiJCyo94u2z9FhW6cJAjFm452j1XLcIgLs9rbf5-Iftn3OjwWvgZjR6L0xxOc4Q9VojjIPn-FuMwveUAunsrks7T-5NDO0bfV6VaNu8OFkxKXdxn5liPiUsiFbnQsM_LjltGGeH",
+                    "width":4032
+                }
+            ],
+            "place_id":"ChIJhfWLfJRpOzIRT8DS-B102T4",
+            "plus_code":{
+                "compound_code":"X3G9+XM Kota Kinabalu, Sabah",
+                "global_code":"6PQRX3G9+XM"
+            },
+            "rating":4.3,
+            "reference":"ChIJhfWLfJRpOzIRT8DS-B102T4",
+            "types":[
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":168
+        },
+        {
+            "business_status":"OPERATIONAL",
+            "formatted_address":"Segama Complex, Jalan Tun Razak, Pusat Bandar Kota Kinabalu, 88000 Kota Kinabalu, Sabah, Malaysia",
+            "geometry":{
+                "location":{
+                    "lat":5.984327,
+                    "lng":116.074286
+                },
+                "viewport":{
+                    "northeast":{
+                    "lat":5.985656379892721,
+                    "lng":116.0756717798927
+                    },
+                    "southwest":{
+                    "lat":5.982956720107278,
+                    "lng":116.0729721201073
+                    }
+                }
+            },
+            "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "name":"Seremban Seafood Restaurant",
+            "opening_hours":{
+                "open_now":false
+            },
+            "photos":[
+                {
+                    "height":2988,
+                    "html_attributions":[
+                    "<a href=\"https://maps.google.com/maps/contrib/104500109590953931929\">廉政组织</a>"
+                    ],
+                    "photo_reference":"ATtYBwKNqLlYi39YG7_QFkhv471tLmKURBMC2NWV9d5WrjOPfW3FG9I_je_RCSG_y9T7dcOXY2LJ7ag3xWXnxjfCd-AHyxj1_MjWwzHd-nU-lS8VHX7LQqfGT-aDfrWDwG56__hjlBlWktvTzz_JTnh9sApM0dz-VWGGHgSdK6LIS15DpgMt",
+                    "width":5312
+                }
+            ],
+            "place_id":"ChIJqbd-G49pOzIRq_y0ZzgKnFY",
+            "plus_code":{
+                "compound_code":"X3MF+PP Kota Kinabalu, Sabah",
+                "global_code":"6PQRX3MF+PP"
+            },
+            "price_level":3,
+            "rating":4.2,
+            "reference":"ChIJqbd-G49pOzIRq_y0ZzgKnFY",
+            "types":[
+                "restaurant",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total":354
+        }
 ]

@@ -17,6 +17,7 @@
     "morgan": "~1.9.1",
     "mysql": "^2.18.1",
     "nodemon": "^1.19.1",
+    "path-to-regexp": "^6.2.0",
     "react-bootstrap": "^1.4.0"
   }
 }
