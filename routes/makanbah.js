@@ -16,37 +16,29 @@ const data = require("../data/restaurants.js");
 //============================
 
 // GET restaurant list
-router.get("/profile", function(req, res, next) {
-    db(`SELECT * FROM students;`)
-      .then(results => {
-        res.send(results.data);
-      })
-      .catch(err => res.status(500).send(err));
-  });
-
-
-
 router.get("/", (req, res) => {
     res.send(data);
     });
 
-router.get("/restaurants/:name", (req, res) => {
-    console.log("try");
-    fetch(API)
-    .then(response => {
-        console.log(response);
-        response.json()
-    })
-    .then(data => {
-        console.log(data);
-        res.send(data);
-        // this.setState({restaurants:data});
-    })
-    .catch(error => {
-        console.log("Error", error);
-    });
-    // res.send("Welcome to the API");
-});
+
+
+// router.get("/restaurants/:name", (req, res) => {
+//     console.log("try");
+//     fetch(API)
+//     .then(response => {
+//         console.log(response);
+//         response.json()
+//     })
+//     .then(data => {
+//         console.log(data);
+//         res.send(data);
+//         // this.setState({restaurants:data});
+//     })
+//     .catch(error => {
+//         console.log("Error", error);
+//     });
+//     // res.send("Welcome to the API");
+// });
 
 
 module.exports = router;
