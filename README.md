@@ -13,7 +13,7 @@ Makanbah is a restaurant recommendations website, which allows it's users to sea
 ### Database Prep
 
 - Access the MySQL interface in your terminal by running `mysql -u root -p`
-- Create a new database called makanbah: `create database makanbah`
+- Create a new database called makanbahDB: `create database makanbahDB`
 - Add a `.env` file to the main folder of this repository containing the MySQL authentication information for MySQL user. For example:
 
 ```bash
