@@ -22,16 +22,37 @@ class RestaurantList extends React.Component {
         })
         .then(data => {
             // console.log(data);
-            this.setState({restaurants:data}); // print data to console
-            this.postRestaurants();
+            this.setState({restaurants:data}); 
+            this.clearRestaurantInfo();
         })
         .catch(error => {
             console.log("Error", error); // catch errors
         });
     }
 
+    clearRestaurantInfo() {
+        console.log("--------DELETE PREVIOUS DATA AND RESET AUTOINCREMENT---------------");
+
+        fetch("/users/clearRestaurants", {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json"
+            }
+            })
+            .then(response => {
+                return response.json()
+            })
+            .then(data => {
+                this.postRestaurants();
+            })
+            .catch(error => {
+                console.log("error", error);
+        });
+    }
     
     postRestaurants() {
+        console.log("--------POST TO THE RESTAURANTS TABLES---------------");
+
         fetch("/users/addRestaurants", {
             method: "POST",
             headers: {
@@ -44,7 +65,7 @@ class RestaurantList extends React.Component {
         .then(res => {
             res.json();
         })
-        .catch(err => 
+        .catch(err =>  
             console.log(err)
         );
     }
