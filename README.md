@@ -1,6 +1,6 @@
 # restaurant-recommendations
 
-Makanbah is a restaurant recommendations website, which allows it's users to search for restaurants nearby them and also create a personalised list of their restaurant choices. The name "Makanbah" was derived from the word "Makan", which means "Eat" in the English language, and "bah" from Sabahan slang which is a colloquial words used in Sabah, Malaysia.
+Makan bah! is a restaurant recommendations website, which allows it's users to search for restaurants nearby them and also create a personalised bucket-list of their restaurant choices. The name "Makan bah!" was derived from the word "Makan", which means "Eat" in the English language, and "bah" from Sabahan slang which is a colloquial words used in Sabah, Malaysia. With Makan Bah!, you don't have to worry again where to eat next!
 
 
 ## Setup
