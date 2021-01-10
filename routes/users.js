@@ -13,27 +13,6 @@ router.get('/', function(req, res, next) {
     res.send(data);
 });
 
-
-// /* POST restaurant to bucketlist. */
-// router.post("/addToBucketList", function(req, res, next) {
-//     console.log(req.body.selectedRestaurant);
-//     let test = req.body.selectedRestaurant.name;
-//     console.log('-----------------------------', test);
-//     res.send('adding');
-//     // res.send('"'+test+'"');
-
-// });
-
-/* POST restaurant to bucketlist. */
-router.post("/addToBucketList", function(req, res, next) {
-    console.log(req.body.postRestaurant);
-    let test = req.body.postRestaurant.name;
-    console.log('-----------------------------', test);
-    res.send('adding');
-    // res.send('n"'+test+'"');
-
-});
-
 // transferring from json file to database
 router.post("/addRestaurants", function (req, res, next) {
      console.log(req, "im requesting")
@@ -71,7 +50,8 @@ router.post("/addRestaurants", function (req, res, next) {
 });
 
 
-/* DELETE restaurant from bucketlist. */
+/* DELETE restaurant from database when refreshed so there's no repetition */
+// Then alter table to make sure id auto increment starts back at 1
 router.delete("/clearRestaurants", function(req, res, next) {
     console.log(req.params.id);
     db(`DELETE FROM restaurants; ALTER TABLE restaurants AUTO_INCREMENT = 1;`)
@@ -97,6 +77,18 @@ router.delete("/clearRestaurants", function(req, res, next) {
 //     .catch(err => res.status(500).send(err));
 //     console.log("Please try again");
 // });
+
+
+
+/* POST restaurant to bucketlist. */
+router.post("/addToBucketList", function(req, res, next) {
+    console.log(req.body.postRestaurant);
+    let test = req.body.postRestaurant.name;
+    console.log('-----------------------------', test);
+    res.send('adding');
+    // res.send('n"'+test+'"');
+
+});
 
 /* DELETE restaurant from bucketlist. */
 router.delete("/addToBucketList/:id", function(req, res, next) {

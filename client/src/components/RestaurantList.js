@@ -70,29 +70,49 @@ class RestaurantList extends React.Component {
         );
     }
                 
+    // addBucketList(clickedRestaurant) {
+    //     console.log("im adding you to bucket", clickedRestaurant);
+    //     fetch("/users/addToBucketList", {
+    //         method: "POST",
+    //         headers: {
+    //         "Content-Type": "application/json"
+    //         },
+    //         body: JSON.stringify({
+    //             postRestaurant: clickedRestaurant,
+    //         })
+    //     })
+    //     .then(res => {
+    //         alert("okkkkk");
+    //         console.log(res, "resss");
+    //         return res.json();
+    //         // this.componentDidMount();
+    //     })
+    //     .then(data => {
+    //         console.log(data,"CCCCCCCCCC");
+    //         // this.setState({restaurants:data});
+    //     })
+    //     .catch(err=> console.log(err));
+    // };
+
+    //adding the bucket list into the db
     addBucketList(clickedRestaurant) {
-        console.log("im adding you to bucket", clickedRestaurant);
         fetch("/users/addToBucketList", {
             method: "POST",
             headers: {
-            "Content-Type": "application/json"
+                "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                postRestaurant: clickedRestaurant,
+                restaurants: clickedRestaurant,
             })
         })
         .then(res => {
-            alert("okkkkk");
-            console.log(res, "resss");
-            return res.json();
+            res.json();
             // this.componentDidMount();
         })
-        .then(data => {
-            console.log(data,"CCCCCCCCCC");
-            // this.setState({restaurants:data});
-        })
-        .catch(err=> console.log(err));
-    };
+        .catch(error => {
+            console.log(error);
+        });
+    }
 
 
     render() { 
@@ -109,27 +129,32 @@ class RestaurantList extends React.Component {
                             </td>
                             <td width="8"/>
                             <td>
-                            <h1>MakanBah</h1>
+                            <h5>Restaurant Finder</h5>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-                <h3>Restaurant Finder</h3>
+                <div className="title-fonts">
+                <p>Makan bah!</p>
+                <span>Looking for something to eat?</span>
                 <h4>Total Restaurants: {restaurants.length}</h4>
+                </div>
+
 
                 {/* <input placeholder="Enter Search"/>     */}
 
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-3">
+                    <div className="col-lg-4">
                         <ul className="bucket-container1">
-                            {restaurants.map(item=>
-                            <ListGroup.Item key={item.place_id}>
+                            {restaurants.map(item =>
+                            <ListGroup.Item key={item.id}>
                                 {/* item.photo_reference = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=300&photo_reference" + photo_reference */}
-                                <h6>{item.name}</h6><p>{item.rating} </p>
+                                {item.name} {item.rating} 
                                 <img alt="photoreference" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=200&photo_reference=ATtYBwJztZ5fRPa7mBQf0jKAT2pcL7bPN0RL0EFmyt3X6wlO_xMsyqe2SpI0BBOkzlCmxpO1_DXpqbzOCaZ2vq-koQlrKqQBo2Vy9N-IvXCsNsX6e3dmKYDlOQTx8ELWky-3ngkCOi7pl2Gp0y4Dl-Np44NXLKbRojx3Y66Ilep8KS1wTq7_&sensor=false&key=AIzaSyAsM-TE6HjRKxM8Tph0HmDmwyaWgRYSuaM"/>
                                 <button
                                 type="button" 
+                                className="btn btn-danger"
                                 onClick={e => this.addBucketList(item)}>
                                     Bucket List!
                                 </button>

@@ -8,81 +8,79 @@ class BucketList extends React.Component {
             restaurants: [],
             complete: 0,
         };
+        // this.updateList = this.updateList.bind(this);
+        // this.deleteList = this.deleteList.bind(this);
     }
 
-// class BucketList extends React.Component {
-//     constructor(props) {
-//         super(props);
-//         this.state = { 
-//             restaurants: [],
-//             complete: 0,
-//         };
-//     }
+    componentDidMount() {
+        fetch("/users")
+        .then(res => res.json())
+        .then(data => {
+            this.setState({
+                restaurants:data
+            })
+        })
+        .catch(error => {
+            console.log("Failure")
+        });
+    }
 
-//     componentDidMount() {
-//         fetch("/users")
-//         .then(res => res.json())
-//         .then(data => {
-//             this.setState({
-//                 restaurants:data
-//             })
-//         })
-//         .catch(error => {
-//             console.log("Failure")
-//         });
-//     }
+    completedList() {
 
-// deleteList(e, id){
-//     fetch("/api/todos/" + id, {
-//         method: "DELETE",
-//         headers: {
-//             "Content-Type": "application/json"
-//         }
-//         })
-//         .then(res => {
-//             res.json();
-//             this.componentDidMount();
-//         })
-//         .catch(error => {
-//             console.log(error);
-//         });
-//     }
+    }
 
-
-// updateList(e, id){
-//     fetch("/api/todos/" + id, {
-//         method: "PUT",
-//         headers: {
-//             "Content-Type": "application/json"
-//         },
-//         body: JSON.stringify({
-//             id: id,
-//             text: e.target.value,
-//             complete: this.state.complete
-//             })
-//         })
-//         .then(res => {
-//             this.componentDidMount();
-//             })
-//         .catch(error => {
-//             console.log(error);
-//             });
-// }
-
-
+    deleteList(){
+        fetch("/users/deleteList", {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json"
+            }
+            })
+            .then(res => {
+                res.json();
+                // this.componentDidMount();
+            })
+            .catch(error => {
+                console.log(error);
+            });
+        }
 
     render () {
         return (
             <form>
-            <div className="bucket-container">
-                <li className="bucket-list">selected restaurant</li>
-                <button className="complete-btn">
-                    <i className="fas fa-check"></i>
-                </button>
-                <button className="trash-btn">
-                    <i className="fas fa-trash"></i>
-                </button>
-            </div>
+                <div className="rows">
+                    <ul>
+                        {this.state.restaurants.map(item => {
+                            return (
+                                <li key={item.id}>
+                                    <div className="bucket-container">
+                                        <div className="bucket-list">selected restaurant</div>
+                                        <input
+                                        type="text"
+                                        className="form-control"
+                                        defaultValue={this.state.restaurants}
+                                        />
+                                        <div>
+                                        <button className="complete-btn"
+                                        type="button"
+                                        onClick={e => this.completedList()}>
+                                            Completed
+                                            {/* <i className="fas fa-check"></i> */}
+                                        </button>
+                                        <button 
+                                        className="trash-btn"
+                                        type="button"
+                                        onClick={e => this.deleteList()}>
+                                            Delete
+                                            {/* <i className="fas fa-trash"></i> */}
+                                        </button> 
+                                        </div>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </div>
             </form>
         );
     }

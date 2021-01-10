@@ -3,6 +3,16 @@
   display: block;
   color: white;
   padding-left: 16px
+
+}
+
+
+body, html {
+  background-image: url("/src/food.jpg");
+  height: 50%;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 
@@ -16,7 +26,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -45,9 +54,9 @@
 .bucket-container1 {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 100%;
 }
 
 .bucket-list {
@@ -71,4 +80,31 @@
 .fa-trash,
 .fa-check {
   pointer-events: none;
+}
+
+.title-fonts {
+  color: white;
+  text-align: center;
+  padding-top: 15%;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+
+}
+
+.title-fonts span {
+  font-family: 'Playball', cursive;
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+
+h5 {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 8px;
+}
+
+h4 {
+  padding-top: 38px;
 }
