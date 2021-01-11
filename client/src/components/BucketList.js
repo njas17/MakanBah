@@ -29,21 +29,6 @@ class BucketList extends React.Component {
 
     }
 
-    deleteList(){
-        fetch("/users/deleteList", {
-            method: "DELETE",
-            headers: {
-                "Content-Type": "application/json"
-            }
-            })
-            .then(res => {
-                res.json();
-                // this.componentDidMount();
-            })
-            .catch(error => {
-                console.log(error);
-            });
-        }
 
     render () {
         return (
@@ -52,9 +37,9 @@ class BucketList extends React.Component {
                     <ul>
                         {this.state.restaurants.map(item => {
                             return (
-                                <li key={item.id}>
+                                <li key={item.place_id}>
                                     <div className="bucket-container">
-                                        <div className="bucket-list">selected restaurant</div>
+                                        {/* <div className="bucket-list">selected restaurant</div> */}
                                         <input
                                         type="text"
                                         className="form-control"

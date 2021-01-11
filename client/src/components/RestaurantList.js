@@ -7,6 +7,7 @@ class RestaurantList extends React.Component {
     super(props);
     this.state = { 
         restaurants: [],
+        bucketListRestaurantId: null
         };
     }
 
@@ -70,39 +71,18 @@ class RestaurantList extends React.Component {
         );
     }
                 
-    // addBucketList(clickedRestaurant) {
-    //     console.log("im adding you to bucket", clickedRestaurant);
-    //     fetch("/users/addToBucketList", {
-    //         method: "POST",
-    //         headers: {
-    //         "Content-Type": "application/json"
-    //         },
-    //         body: JSON.stringify({
-    //             postRestaurant: clickedRestaurant,
-    //         })
-    //     })
-    //     .then(res => {
-    //         alert("okkkkk");
-    //         console.log(res, "resss");
-    //         return res.json();
-    //         // this.componentDidMount();
-    //     })
-    //     .then(data => {
-    //         console.log(data,"CCCCCCCCCC");
-    //         // this.setState({restaurants:data});
-    //     })
-    //     .catch(err=> console.log(err));
-    // };
-
+    
     //adding the bucket list into the db
-    addBucketList(clickedRestaurant) {
+    submitRestaurant(clickedRestaurantId) {
+        // this.getRestaurantID(clickedRestaurant.name);
         fetch("/users/addToBucketList", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                restaurants: clickedRestaurant,
+                restaurant_id: clickedRestaurantId,
+                complete: 0
             })
         })
         .then(res => {
@@ -112,6 +92,30 @@ class RestaurantList extends React.Component {
         .catch(error => {
             console.log(error);
         });
+    }
+
+    addBucketList(clickedRestaurant) {
+        // fetch a url that goes to API and run the query that gives us the id based on the name
+        // console.log(nameOfRestaurant);
+        let restaurantId= null;
+        fetch("/users/getRestaurantID?restaurantName="+clickedRestaurant.name, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+        .then(res => {
+            return res.json();
+        }) 
+        .then(data => {
+            console.log(data);
+            restaurantId = data;
+            this.submitRestaurant(restaurantId);
+        })
+        .catch(error => {
+            console.log(error);
+        });
+        
     }
 
 
@@ -148,9 +152,11 @@ class RestaurantList extends React.Component {
                     <div className="col-lg-4">
                         <ul className="bucket-container1">
                             {restaurants.map(item =>
-                            <ListGroup.Item key={item.id}>
+                            <ListGroup.Item key={item.place_id}>
                                 {/* item.photo_reference = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=300&photo_reference" + photo_reference */}
-                                {item.name} {item.rating} 
+                                {item.name} 
+                                <br></br>
+                                Ratings: {item.rating} 
                                 <img alt="photoreference" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=200&photo_reference=ATtYBwJztZ5fRPa7mBQf0jKAT2pcL7bPN0RL0EFmyt3X6wlO_xMsyqe2SpI0BBOkzlCmxpO1_DXpqbzOCaZ2vq-koQlrKqQBo2Vy9N-IvXCsNsX6e3dmKYDlOQTx8ELWky-3ngkCOi7pl2Gp0y4Dl-Np44NXLKbRojx3Y66Ilep8KS1wTq7_&sensor=false&key=AIzaSyAsM-TE6HjRKxM8Tph0HmDmwyaWgRYSuaM"/>
                                 <button
                                 type="button" 
@@ -196,6 +202,29 @@ export default RestaurantList;
     //     });
     // }
 
+    // addBucketList(clickedRestaurant) {
+    //     console.log("im adding you to bucket", clickedRestaurant);
+    //     fetch("/users/addToBucketList", {
+    //         method: "POST",
+    //         headers: {
+    //         "Content-Type": "application/json"
+    //         },
+    //         body: JSON.stringify({
+    //             postRestaurant: clickedRestaurant,
+    //         })
+    //     })
+    //     .then(res => {
+    //         alert("okkkkk");
+    //         console.log(res, "resss");
+    //         return res.json();
+    //         // this.componentDidMount();
+    //     })
+    //     .then(data => {
+    //         console.log(data,"CCCCCCCCCC");
+    //         // this.setState({restaurants:data});
+    //     })
+    //     .catch(err=> console.log(err));
+    // };
 
 
 

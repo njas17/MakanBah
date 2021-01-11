@@ -1,18 +1,18 @@
-import React from "react";
-// Import components
-import Restaurants from "./RestaurantList";
+// import React from "react";
+// // Import components
+// import Restaurants from "./RestaurantList";
 
 
-const BucketList =({ buckets }) => {
-    return (
-        <div className ="bucket-container">
-            <ul className="bucket-list">
-                {buckets.map((item) => (
-                    <Restaurants name={item.name} id={item.id}/>
-                ))}
-            </ul>
-        </div>
-    );
-};
+// const BucketList =({ buckets }) => {
+//     return (
+//         <div className ="bucket-container">
+//             <ul className="bucket-list">
+//                 {buckets.map((item) => (
+//                     <Restaurants name={item.name} id={item.id}/>
+//                 ))}
+//             </ul>
+//         </div>
+//     );
+// };
 
-export default BucketList;
+// export default BucketList;
