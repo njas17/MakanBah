@@ -26,7 +26,7 @@ Makan bah! project is to allow its users to search for nearby restaurants and ar
 - Self add restaurant listing features. Restaurants are able to add themselves into the restaurant listings. 
 
 ## Database Schema and API
-- ![DB Schema] ()
+- ![DB Schema] (databaseschema.png)
 
 ## Setup
 
