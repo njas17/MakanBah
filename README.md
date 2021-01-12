@@ -61,12 +61,13 @@ Makan bah! project is to allow its users to search for nearby restaurants and ar
 - Get your API Key from [here](https://developers.google.com/places/web-service/get-api-key). Follow all the steps in the link provided (1. Creating API keys, 2. Adding the API key to your request, 3. Restricting API keys) 
 
 ### Display a list of restaurants in your front-end
-* [ ] Get the restaurants list in Kota Kinabalu database from Google Place API. You can access the API from https://maps.googleapis.com/maps/api/place/nearbysearch/jsonlocation=5.9804,116.0735&radius=1500&type=restaurant&key=YOUR_API_KEY
+* [ ] Get the restaurants in Kota Kinabalu database from Google Place API. You can access the API from https://maps.googleapis.com/maps/api/place/nearbysearch/jsonlocation=5.9804,116.0735&radius=1500&type=restaurant&key=YOUR_API_KEY
+Remember to key in `YOUR API KEY` at the end of the link.
 If you are getting error, "No Access Allow Origin", please save the data into a JSON file. Store this file in your public folder. 
 
 ### Create a button that will insert the selected restaurant into the bucket-list page.
 * [ ] Add functionality.
-When the list of restaurants has been displayed, add a 'bucket list' button. The selected restaurant should be displayed in the bucket-list.
+When you get the list of restaurants displayed, add a 'bucket list' button to each restaurants. The selected restaurant should be added into the bucket-list.
 * [ ] Add styling.
 Make it look as polish as possible. Use bootstrap if preferred. 
 
