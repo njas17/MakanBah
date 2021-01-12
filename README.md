@@ -17,19 +17,23 @@ Makan bah! project is to allow its users to search for nearby restaurants and ar
 
 **OUR PRODUCT**: Saves users’ time and enhances users’ restaurant search experience
 
-### Current Features
+
+## MVP
+### Current Feature
 - List of restaurants displayed in the front-end with a button called bucket-list
+- Selected/clicked restaurant will be added into the bucket list with a set of completed and delete button. When users have visited the restaurant, they can click on the completed button and/or delete button
 
 ### Future Feature
 - 'Go Now' Button that allows live direction to the restaurant's location
-- Points collector. With every bucket-list completed, points will be collected. 
-- Self add restaurant listing features. Restaurants are able to add themselves into the restaurant listings. 
+- Points collector. With every bucket-list completed, points will be collected
+- Self add restaurant listing features. Restaurants are able to add themselves into the restaurant listing
+
 
 ## Database Schema and API
 - ![DB Schema](databaseschema.png)
 
-## Setup
 
+## Setup
 ### Dependencies 
 
 - Run `npm install` in project directory. This will install server-related dependencies such as `express`.
@@ -48,26 +52,33 @@ Makan bah! project is to allow its users to search for nearby restaurants and ar
   DB_PASS=YOURPASSWORD
 ```
 
-- Run `npm run migrate` in the main folder of this repository, in a new terminal window. This will create a table called 'makanbahDB' in your database.
+- Run `npm run migrate` in the main folder of this repository, in a new terminal window. This will create three tables called 'restaurants', 'bucket_list', and 'user' in your makanbahDB database.
 
 ### Development
 
-- Run `npm start` in project directory to start the Express server on port 5000
-- `cd client` and run `npm start` to start client server in development mode with hot reloading in port 3000.
+- Run `npm start` in project directory to start the Express server on port 5000 
+- Go to `(localhost:5000/users)` to view the restaurants' list
+- `cd client` and run `npm start` to start client server in development mode with hot reloading in port 3000 `(localhost:3000)`
 
 ## Basic Requirements
 
 ### Create your API Key
-- Get your API Key from [here](https://developers.google.com/places/web-service/get-api-key). Follow all the steps in the link provided (1. Creating API keys, 2. Adding the API key to your request, 3. Restricting API keys) 
+* [ ] Get your API Key from [here](https://developers.google.com/places/web-service/get-api-key)
+Follow all the steps in the link:
+
+1. Creating API keys, 
+2. Adding the API key to your request, 
+3. Restricting API keys
 
 ### Display a list of restaurants in your front-end
 * [ ] Get the restaurants in Kota Kinabalu database from Google Place API. You can access the API from https://maps.googleapis.com/maps/api/place/nearbysearch/jsonlocation=5.9804,116.0735&radius=1500&type=restaurant&key=YOUR_API_KEY
-Remember to key in `YOUR API KEY` at the end of the link.
-If you are getting error, "No Access Allow Origin", please save the data into a JSON file. Store this file in your public folder. 
+Remember to key in `YOUR_API_KEY` to the end of the link provided.
+* [ ] Save the data into a JSON file (to avoid "No Access Allow Origin" error)
+* [ ] Store the JSON file inside your public folder 
 
 ### Create a button that will insert the selected restaurant into the bucket-list page.
 * [ ] Add functionality.
-When you get the list of restaurants displayed, add a 'bucket list' button to each restaurants. The selected restaurant should be added into the bucket-list.
+When you get the list of restaurants displayed on the front-end, add a 'bucket list' button to each restaurants. When you click on the button, the selected restaurant should be added into the bucket-list.
 * [ ] Add styling.
 Make it look as polish as possible. Use bootstrap if preferred. 
 
