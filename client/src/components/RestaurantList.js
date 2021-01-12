@@ -133,7 +133,7 @@ class RestaurantList extends React.Component {
                             </td>
                             <td width="8"/>
                             <td>
-                            <h5>Restaurant Finder</h5>
+                            <h3>Hi, Khalilah!</h3>
                             </td>
                         </tr>
                     </tbody>
@@ -176,55 +176,6 @@ class RestaurantList extends React.Component {
 }
 
 export default RestaurantList;
-
-
-// addBucketList(clickedRestaurant){
-    //     console.log("im adding you to bucket", clickedRestaurant);
-    //     fetch("/users/addToBucketList", {
-    //         method: "POST",
-    //         headers: {
-    //             "Content-Type": "application/json"
-    //         },
-    //         body: JSON.stringify({
-    //             postRestaurant: clickedRestaurant
-    //         })
-    //     })
-    //     .then(res => {
-    //         alert("Restaurant added");
-    //         res.text();
-    //         // this.componentDidMount();
-    //     })
-    //     .then(text => {
-    //         console.log(text);
-    //     })
-    //     .catch(error => {
-    //         console.log(error);
-    //     });
-    // }
-
-    // addBucketList(clickedRestaurant) {
-    //     console.log("im adding you to bucket", clickedRestaurant);
-    //     fetch("/users/addToBucketList", {
-    //         method: "POST",
-    //         headers: {
-    //         "Content-Type": "application/json"
-    //         },
-    //         body: JSON.stringify({
-    //             postRestaurant: clickedRestaurant,
-    //         })
-    //     })
-    //     .then(res => {
-    //         alert("okkkkk");
-    //         console.log(res, "resss");
-    //         return res.json();
-    //         // this.componentDidMount();
-    //     })
-    //     .then(data => {
-    //         console.log(data,"CCCCCCCCCC");
-    //         // this.setState({restaurants:data});
-    //     })
-    //     .catch(err=> console.log(err));
-    // };
 
 
 

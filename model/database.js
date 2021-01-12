@@ -20,11 +20,11 @@ con.connect(function(err) {
 
   // let sql = "DROP TABLE IF exists items; CREATE TABLE items(id INT NOT NULL AUTO_INCREMENT, text VARCHAR(40) not null, complete BOOLEAN, PRIMARY KEY (id)); "; // change this too
   let sql = 
-  "DROP database IF exists makanbahDB; create database makanbahDB; use makanbahDB;";
-  + "CREATE TABLE `restaurants` (`id` INT(25) NOT NULL AUTO_INCREMENT,`name` varchar(50) NOT NULL,`formatted_address` varchar(255) NOT NULL,`rating` varchar(50) NOT NULL,PRIMARY KEY (`id`));";
-  + "CREATE TABLE `bucket_list` (`id` INT(25) NOT NULL AUTO_INCREMENT,`restaurant_id` INT(25) NOT NULL,`complete` BOOLEAN NOT NULL,PRIMARY KEY (`id`));";
-  + "CREATE TABLE `user` (`id` INT(25) NOT NULL AUTO_INCREMENT,`bucket_list_id` INT(25) NOT NULL,`firstName` varchar(255) NOT NULL,`lastName` varchar(255) NOT NULL,`email` varchar(255) NOT NULL,PRIMARY KEY (`id`));";
-  + "ALTER TABLE `bucket_list` ADD CONSTRAINT `bucket_list_fk0` FOREIGN KEY (`restaurant_id`) REFERENCES `restaurants`(`id`);"
+  "DROP database IF exists makanbahDB; create database makanbahDB; use makanbahDB;"
+  + "CREATE TABLE `restaurants` (`id` INT(25) NOT NULL AUTO_INCREMENT,`name` varchar(50) NOT NULL,`formatted_address` varchar(255) NOT NULL,`rating` varchar(50) NOT NULL,PRIMARY KEY (`id`));"
+  + "CREATE TABLE `bucket_list` (`id` INT(25) NOT NULL AUTO_INCREMENT,`restaurant_id` INT(25) NOT NULL,`complete` BOOLEAN NOT NULL,PRIMARY KEY (`id`));"
+  + "CREATE TABLE `user` (`id` INT(25) NOT NULL AUTO_INCREMENT,`bucket_list_id` INT(25) NOT NULL,`firstName` varchar(255) NOT NULL,`lastName` varchar(255) NOT NULL,`email` varchar(255) NOT NULL,PRIMARY KEY (`id`));"
+  + "ALTER TABLE `bucket_list` ADD CONSTRAINT `bucket_list_fk0` FOREIGN KEY (`restaurant_id`) REFERENCES `restaurants`(`id`);";
   con.query(sql, function (err, result) {
     if (err) throw err;
     console.log("Tables creation `makanbahDB` db were successful!");
