@@ -5,16 +5,28 @@ Makan bah! is a restaurant recommendations website, which allows it's users to s
 ## Project Description
 Makan bah! project is to allow its users to search for nearby restaurants and are able to add restaurants into their bucket list for future visits.
 
-FOR: Foodies that have difficulties of figuring out where to have their next meals in Kota Kinabalu
-WHO: Like to explore new food and restaurants.
-THE: Product    IS: A platform
-THAT: Delivers restaurant recommendations and has a personalised bucket-list
-UNLIKE: Wasting time figuring out where to eat
-OUR PRODUCT: Saves users’ time and enhances users’ restaurant search experience
+**FOR**: Foodies that have difficulties of figuring out where to have their next meals in Kota Kinabalu
 
-### Current Feature
-* List of restaurants displayed in the front-end with a button called bucket-list
-*
+**WHO**: Like to explore new food and restaurants.
+
+**THE**: Product    IS: A platform
+
+**THAT**: Delivers restaurant recommendations and has a personalised bucket-list
+
+**UNLIKE**: Wasting time figuring out where to eat
+
+**OUR PRODUCT**: Saves users’ time and enhances users’ restaurant search experience
+
+### Current Features
+- List of restaurants displayed in the front-end with a button called bucket-list
+
+### Future Feature
+- 'Go Now' Button that allows live direction to the restaurant's location
+- Points collector. With every bucket-list completed, points will be collected. 
+- Self add restaurant listing features. Restaurants are able to add themselves into the restaurant listings. 
+
+## Database Schema and API
+- ![DB Schema] ()
 
 ## Setup
 
