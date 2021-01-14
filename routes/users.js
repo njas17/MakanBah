@@ -3,6 +3,7 @@ var router = express.Router();
 const db = require("../model/helper");
 const bodyParser = require("body-parser");
 const data = require("../data/restaurants.js");
+const utils = require('../utils');
 
 router.use(bodyParser.json());
 
@@ -138,19 +139,44 @@ router.delete("/addToBucketList/:id", function(req, res, next) {
         console.log("ID not found");
 });
 
-router.get("/users/:id", function(req, res, next) {
-    console.log(req.params.id);
-    db(`DELETE FROM bucket_list WHERE id= ${req.params.id}`)
-        .then(results => {
-            res.send(results.data);
-            console.log("Record has been deleted");
+
+// validate the user credentials
+router.post('/signin', function (req, res) {
+    const user = req.body.email;
+    const pwd = req.body.password;
+    
+    // return 400 status if username/password is not exist
+    if (!user || !pwd) {
+      return res.status(400).json({
+        error: true,
+        message: "Username or Password is required."
+      });
+    }
+    
+    // validate the user credentials - checking from the database
+    let sqlStr = "SELECT id as userId, concat(firstname, lastname) as name, email, isAdmin "
+    + "FROM USER WHERE email='" + user + "' and loginpw='" + pwd + "';";
+    //console.log(sqlStr);
+    db(sqlStr)
+        .then(results => results.data[0])
+        .then(data =>{
+            const token = utils.generateToken(data);
+            //console.log("is error here", data);
+            // get basic user details
+            const userObj = utils.getCleanUser(data);
+            // return the token along with user details
+            return res.json({ user: userObj, token });
         })
-        .catch(err => res.status(500).send(err));
-        console.log("ID not found");
-});
+        .catch(err => {
+            return res.status(401).json({
+                error: true,
+                message: "Wrong email or password."
+            })
+        });
 
-
-
+        console.log("user is validated with token....")
+  });
+  
 
 
 
