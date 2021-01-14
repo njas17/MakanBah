@@ -138,6 +138,18 @@ router.delete("/addToBucketList/:id", function(req, res, next) {
         console.log("ID not found");
 });
 
+router.get("/users/:id", function(req, res, next) {
+    console.log(req.params.id);
+    db(`DELETE FROM bucket_list WHERE id= ${req.params.id}`)
+        .then(results => {
+            res.send(results.data);
+            console.log("Record has been deleted");
+        })
+        .catch(err => res.status(500).send(err));
+        console.log("ID not found");
+});
+
+
 
 
 
