@@ -1,30 +1,36 @@
-import React from "react";
+import React, { useContext, createContext, useState } from "react";
 import "./App.css";
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import AdminPage from "./components/AdminPage";
-import LandingPage from "./components/LandingPage";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import LoginPage from "./components/LoginPage";
+import HomePage from "./components/HomePage";
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <BrowserRouter>
+
+function App() {
+
+  return (
+    <div>
+
+      <Router>
+        <div>
+          <div className="navmakan">
+            <Link to="/">Home</Link> 
+            <Link to="/login">Login</Link> 
+            <Link to="/main">Main</Link> 
+          </div>
           <Switch>
-          <Route path="/">
+            <Route path="/">
+              <HomePage />
+            </Route>
+            <Route path="/login">
               <LoginPage />
             </Route>
-            <Route path="/landingpage">
-              <LandingPage />
-            </Route>
-            <Route path="/adminpage">
-              <AdminPage />
-            </Route>
           </Switch>
-        </BrowserRouter>
-      </div>
-    );
-  }
+        </div>
+      </Router>
+    </div>
+  );
 }
+
+
 
 export default App;

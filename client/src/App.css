@@ -5,7 +5,9 @@
   padding-left: 16px
 
 }
-
+html {
+  overflow-y: scroll;
+}
 
 body, html {
   background-image: url("/src/food.jpg");
@@ -111,4 +113,16 @@ h4 {
 
 .loginpage {
   background-color: #ffffff9a;
+}
+
+.navmakan {
+  background-color: #ffffffda;
+  font-size: 14px;
+  height: 30px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.navmakan a {
+  margin-right: 10px;
 }
