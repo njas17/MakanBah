@@ -3,7 +3,7 @@ var router = express.Router();
 const db = require("../model/helper");
 const bodyParser = require("body-parser");
 const data = require("../data/restaurants.js");
-const utils = require('../utils');
+const cors = require('cors');
 
 router.use(bodyParser.json());
 
@@ -140,6 +140,18 @@ router.delete("/addToBucketList/:id", function(req, res, next) {
 });
 
 
+const utils = require('../utils');
+const jwt = require('jsonwebtoken');
+// parse application/x-www-form-urlencoded
+router.use(bodyParser.urlencoded({ extended: true }));
+
+let userData = {
+        userId: 1,
+        email: "meow@some.com",
+        name: "LittleMeow",
+        isAdmin: 0
+};
+
 // validate the user credentials
 router.post('/signin', function (req, res) {
     const user = req.body.email;
@@ -160,17 +172,25 @@ router.post('/signin', function (req, res) {
     db(sqlStr)
         .then(results => results.data[0])
         .then(data =>{
+            //use dummy data userData first
             const token = utils.generateToken(data);
-            //console.log("is error here", data);
             // get basic user details
             const userObj = utils.getCleanUser(data);
             // return the token along with user details
+
+
+            console.log(token);
+            const decoded = jwt.verify(token, process.env.JWT_SECRET);
+            console.log(decoded);
+            console.log("the user id --------", decoded.userId); // bar
+
             return res.json({ user: userObj, token });
         })
         .catch(err => {
+            console.log(err);
             return res.status(401).json({
                 error: true,
-                message: "Wrong email or password."
+                message: "Wrong email or password." 
             })
         });
 
@@ -178,6 +198,39 @@ router.post('/signin', function (req, res) {
   });
   
 
+// verify the token and return it if it's valid
+router.get('/verifyToken', function (req, res) {
+    // check header or url parameters or post parameters for token
+    var token = req.query.token;
+    if (!token) {
+      return res.status(400).json({
+        error: true,
+        message: "Token is required."
+      });
+    }
+
+    // check token that was passed by decoding token using secret
+    jwt.verify(token, process.env.JWT_SECRET, function (err, user) {    
+      console.log("testing");
+      
+      if (err) return res.status(401).json({
+        error: true,
+        message: "Invalid token."
+      });
+
+      // return 401 status if the userId does not match.
+      if (user.userId !== userData.userId) {
+        return res.status(401).json({
+          error: true,
+          message: "Invalid user."
+        });
+      }
+      // get basic user details
+      var userObj = utils.getCleanUser(userData);
+      return res.json({ user: userObj, token });
+    });
+  });
+  
 
 
 

@@ -6,8 +6,6 @@ var logger = require('morgan');
 
 // const cors = require('cors');
 // const bodyParser = require('body-parser');
-const utils = require('./utils');
-const jwt = require('jsonwebtoken');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
