@@ -8,7 +8,7 @@ function generateToken(user) {
   if (!user) return null;
 
   let u = {
-    userId: user.userId,
+    id: user.id,
     email: user.email,    
     name: user.name,
     isAdmin: user.isAdmin
@@ -24,7 +24,7 @@ function getCleanUser(user) {
   if (!user) return null;
 
   return {
-    userId: user.userId,
+    id: user.id,
     email: user.email,    
     name: user.name,
     isAdmin: user.isAdmin

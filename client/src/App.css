@@ -110,19 +110,58 @@ h5 {
 h4 {
   padding-top: 38px;
 }
-
-.loginpage {
-  background-color: #ffffff9a;
+.inline {
+  display: inline;
 }
-
+.loginpage, .registrationpage{
+  background-color: #ffffff9a;
+  width: 30%;
+  padding: 10px 10px 15px 20px;
+  border-radius: 0 0 5% 20%;
+}
+.registrationpage span {
+  display: block;
+  margin-top: 15px;
+}
+.loginpage a {
+  text-decoration: underline;
+  font-weight: 600;
+  background-color: #ffffffda;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.loginpage .btn {
+  margin-bottom: 20px;
+}
+.registrationpage h4 {
+  padding-top: 10px;
+}
+.form-label {
+  font-weight: 600;
+}
+.center {
+  text-align: center;
+}
 .navmakan {
   background-color: #ffffffda;
   font-size: 14px;
   height: 30px;
   font-weight: bold;
   text-align: right;
+  padding-top: 5px;
+  padding-right: 10px;
 }
 
 .navmakan a {
   margin-right: 10px;
+}
+
+.homewriteup {
+  margin-top: 10%;
+  background-color: #ffffff9a;
+  border-radius: 10px;
+}
+.homewriteup p {
+  font-size: 16px;
 }
