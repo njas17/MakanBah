@@ -56,7 +56,7 @@ The feature extension consist of:
 
 ## Setup
 
-### Dependencies 
+### Dependencies
 
 - Run `npm install` in project directory. This will install server-related dependencies such as `express`.
 - `cd client` and run `npm install` and `yarn install`. This will install client dependencies (React).
