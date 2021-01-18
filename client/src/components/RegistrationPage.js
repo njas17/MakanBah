@@ -36,7 +36,7 @@ class RegistrationPage extends Component {
                 this.setState({ isRegistered: true });
             })
             .catch(error => {
-                console.error("Error in add: ", error);
+                console.error("Error in add user: ", error);
             });
     };
 
@@ -44,9 +44,8 @@ class RegistrationPage extends Component {
         fetch("/auth/users/" + this.state.user.email)
             .then(response => response.json())
             .then(data => {
-                const val = (data.length > 0) ? true : false
-                if (val) 
-                    this.setState({ errorMesg: "Sorry. The email you have provided is already registered in this site."})
+                const val = (data.length > 0) ? "Sorry. The email you have provided is already registered in this site." : "";
+                this.setState({ errorMesg: val })
             })
             .catch(error => {
                 console.error("Error in check email: ", error);
@@ -63,9 +62,8 @@ class RegistrationPage extends Component {
             return;
         }
             
-        this.checkUserEmail();
-
-        if (this.state.errorMesg !== "")
+        this.checkUserEmail(); 
+        if (this.state.errorMesg === "")
             this.addUser();
     }
 
@@ -115,7 +113,7 @@ class RegistrationPage extends Component {
                                         <input type="password" name="password" value={user.password} required onChange={(e) => this.handleChange(e)} className="form-control" ></input>
                                     </div>
                                     <div className="center">
-                                        <button className="btn btn-primary" onClick={(e) => this.handleSubmit(e)} type="button">Sign Up</button> {` `}
+                                        <button className="btn btn-primary" onClick={(e) => this.handleSubmit(e)} type="button">Sign Up</button> {`  `}
                                         <button className="btn btn-secondary" onClick={(e) => this.handleReset(e)} type="button">Reset</button>
                                     </div>
                                 </div>

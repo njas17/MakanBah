@@ -20,7 +20,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       isAuthenticated: false,
-      // token: null,
+      //token: null,
       user: {}
     }
   }
@@ -44,8 +44,6 @@ class App extends React.Component {
     })
       .then(response => response.json())
       .then(data => {
-          //console.log("Validation starts..", data);
-          //this.props.signin(data);
           this.setState({
             isAuthenticated: true,
             user: data.user
@@ -64,7 +62,7 @@ class App extends React.Component {
 
   setToken = (obj) => {
     this.setState({
-      token: obj.token,
+      //token: obj.token,
       user: obj.user,
       isAuthenticated: true
     });

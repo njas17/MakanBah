@@ -6,9 +6,10 @@ class LoginPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            errorMesg: '',
             email: '',
             password: '',
-            user: { }
+            user: {}
         }
     }
 
@@ -26,66 +27,79 @@ class LoginPage extends Component {
                 this.setState({ user: data[0] })
             }).then(() => this.validateUser())
             .catch(error => {
-              console.error("Error in add: ", error);
-            }); 
+                this.setState({ errorMesg: "Sign-In Error: Please ensure you entered a valid email and password."});
+            });
     }
 
     validateUser = () => {
+        const { errorMesg, ...rest } = this.state;
+
         fetch(`/auth/signin`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(this.state)
-          })
+            body: JSON.stringify(rest)
+        })
             .then(response => response.json())
             .then(data => {
-                console.log("Validation starts..", {...data.token, ...data.user});
-                //this.props.signin({data.token, data.user});
+                this.props.signin(data.user);
                 setUserSession(data.token, data.user);
-                // this.props.history.push('/landingpage');
             })
             .catch(error => {
-              console.error("Error in add: ", error);
+                this.setState({ errorMesg: "Validation Error: Please ensure you entered a valid email and password."});
             });
     }
 
     handleSubmit(e) {
+        const { email, password } = this.state;
+
         e.preventDefault();
-        this.userSignin();
-        //this.props.history.push("/landingpage");
-    } 
+        this.setState({ errorMesg: "" });
+        if (email === "" || password === "") {
+            this.setState({ errorMesg: "All fields are required. Please provide the information." });
+            return;
+        }
+
+        if (this.state.errorMesg === "")
+            this.userSignin();
+    }
 
     render() {
-        // if (this.props.isAuthenticated) {
-        //     return <LandingPage />
-        // }
+        const { errorMesg } = this.state;
 
         return (
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-8"></div>
-                    { (!this.props.isAuthenticated) ? (                    
-                    <div className="col-4 loginpage">
-                        <h3>Please login:</h3>
-                        <form>
-                            <div className="form-group">
-                                <label>Email:</label><input type="email" name="email" required onChange={(e) => this.handleChange(e)} className="form-control"></input>
-                            </div>
-                            <div className="form-group">
-                                <label>Password:</label><input type="password" name="password" required onChange={(e) => this.handleChange(e)} className="form-control"></input>
-                            </div>
-                            <div className="center">
-                                <button className="btn btn-secondary" onClick={(e) => this.handleSubmit(e)} type="submit">Login</button> 
-                                <div><Link to="/registrationpage">Sign up to become a MakanBah! user.</Link></div>
-                            </div>
-                        </form>
-                    </div>
-                    ) : (
+                    {(!this.props.isAuthenticated) ? (
                         <div className="col-4 loginpage">
-                            <h6>You have logged in. Click to continue -</h6>
-                            <div><Link to="/landingpage"> Member Page </Link></div>
-                            
+                            <h3>Please login:</h3>
+                            { (errorMesg !== "") ? (
+                                <div className="alert alert-danger" role="alert">
+                                    { errorMesg }
+                                </div>
+                            ) : null}                            
+                            <form>
+                                <div className="form">
+                                    <div className="form-group">
+                                        <label>Email:</label><input type="email" name="email" required onChange={(e) => this.handleChange(e)} className="form-control"></input>
+                                    </div>
+                                    <div className="form-group">
+                                        <label>Password:</label><input type="password" name="password" required onChange={(e) => this.handleChange(e)} className="form-control"></input>
+                                    </div>
+                                    <div className="center">
+                                        <button className="btn btn-secondary" onClick={(e) => this.handleSubmit(e)} type="submit">Login</button>
+                                        <div><Link to="/registrationpage">Sign up to become a MakanBah! user.</Link></div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        ) }
+                    ) : (
+                            <div className="col-4 loginpage">
+                                <h6>You have logged in. Click to continue -</h6>
+                                <div><Link to="/landingpage"> Member Page </Link></div>
+
+                            </div>
+                        )}
                 </div>
             </div>
         );
