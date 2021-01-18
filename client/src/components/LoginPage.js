@@ -69,10 +69,10 @@ class LoginPage extends Component {
         return (
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-8"></div>
+                    <div className="col-9"></div>
                     {(!this.props.isAuthenticated) ? (
-                        <div className="col-4 loginpage">
-                            <h3>Please login:</h3>
+                        <div className="col-3 loginpage">
+                            <h5>Login to MakanBah!</h5>
                             { (errorMesg !== "") ? (
                                 <div className="alert alert-danger" role="alert">
                                     { errorMesg }
@@ -81,14 +81,14 @@ class LoginPage extends Component {
                             <form>
                                 <div className="form">
                                     <div className="form-group">
-                                        <label>Email:</label><input type="email" name="email" required onChange={(e) => this.handleChange(e)} className="form-control"></input>
+                                        <input type="email" name="email" placeholder="Email" required onChange={(e) => this.handleChange(e)} className="form-control"></input>
                                     </div>
                                     <div className="form-group">
-                                        <label>Password:</label><input type="password" name="password" required onChange={(e) => this.handleChange(e)} className="form-control"></input>
+                                        <input type="password" name="password" placeholder="Password" required onChange={(e) => this.handleChange(e)} className="form-control"></input>
                                     </div>
                                     <div className="center">
-                                        <button className="btn btn-secondary" onClick={(e) => this.handleSubmit(e)} type="submit">Login</button>
-                                        <div><Link to="/registrationpage">Sign up to become a MakanBah! user.</Link></div>
+                                        <button className="btn btn-primary" onClick={(e) => this.handleSubmit(e)} type="submit">Login</button>
+                                        <div><Link to="/registrationpage">Not a member? Sign up now.</Link></div>
                                     </div>
                                 </div>
                             </form>

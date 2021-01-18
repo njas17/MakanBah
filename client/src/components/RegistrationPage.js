@@ -85,38 +85,38 @@ class RegistrationPage extends Component {
         return (
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-8"></div>
+                    <div className="col-9"></div>
                     {(!isRegistered) ? (
-                        <div className="col-4 registrationpage">
-                            <h4>Register your information to sign up:</h4>
+                        <div className="col-3 registrationpage">
+                            <h5>Membership Sign-Up</h5>
                             { (errorMesg !== "") ? (
                                 <div className="alert alert-danger" role="alert">
                                     { errorMesg }
                                 </div>
                             ) : null}
                             <form>
-                                <div className="form">
-                                    <div className="form-group">
-                                        <label className="form-label">First Name:</label>
+
+                                    <div className="input-group mb-3">
+                                        <span className="input-group-text">First Name</span>
                                         <input type="text" name="firstname" value={user.firstname} required onChange={(e) => this.handleChange(e)} className="form-control"  ></input>
                                     </div>
-                                    <div className="form-group">
-                                        <label className="form-label">Last Name:</label>
+                                    <div className="input-group mb-3">
+                                        <span className="input-group-text">Last Name</span>
                                         <input type="text" name="lastname" value={user.lastname} required onChange={(e) => this.handleChange(e)} className="form-control" ></input>
                                     </div>
-                                    <div className="form-group">
-                                        <label className="form-label">Email:</label>
+                                    <div className="input-group mb-3">
+                                        <span className="input-group-text">{`Email    `}</span>
                                         <input type="email" name="email" value={user.email} required onChange={(e) => this.handleChange(e)} className="form-control"  ></input>
                                     </div>
-                                    <div className="form-group">
-                                        <label className="form-label">Password:</label>
+                                    <div className="input-group mb-3">
+                                        <span className="input-group-text">Password</span>
                                         <input type="password" name="password" value={user.password} required onChange={(e) => this.handleChange(e)} className="form-control" ></input>
                                     </div>
                                     <div className="center">
                                         <button className="btn btn-primary" onClick={(e) => this.handleSubmit(e)} type="button">Sign Up</button> {`  `}
                                         <button className="btn btn-secondary" onClick={(e) => this.handleReset(e)} type="button">Reset</button>
                                     </div>
-                                </div>
+
                             </form>
                         </div>
                     ) : (
