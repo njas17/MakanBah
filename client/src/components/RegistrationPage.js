@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class RegistrationPage extends Component {
     constructor(props) {
@@ -40,31 +41,29 @@ class RegistrationPage extends Component {
             });
     };
 
-    checkUserEmail = () => {
+    checkAddUser = () => {
         fetch("/auth/users/" + this.state.user.email)
             .then(response => response.json())
             .then(data => {
-                const val = (data.length > 0) ? "Sorry. The email you have provided is already registered in this site." : "";
-                this.setState({ errorMesg: val })
+                if (data.length > 0) this.setState({ errorMesg: "Sorry. The email you have provided is already registered in this site." });
+                else this.addUser();
             })
             .catch(error => {
                 console.error("Error in check email: ", error);
-                this.setState({ errorMesg: "Error on email. Please ensure email is provided."})
+                this.setState({ errorMesg: "Error on email. Please ensure email is provided." });
             });
     };
 
     handleSubmit = (event) => {
         event.preventDefault();
-        this.setState({ errorMesg: "" });
+
         const user = this.state.user;
         if (user.firstname === "" || user.lastname === "" || user.email === "" || user.password === "") {
             this.setState({ errorMesg: "All fields are required. Please provide the information." });
             return;
         }
-            
-        this.checkUserEmail(); 
-        if (this.state.errorMesg === "")
-            this.addUser();
+
+        this.checkAddUser();
     }
 
     handleReset = (event) => {
@@ -91,39 +90,37 @@ class RegistrationPage extends Component {
                             <h5>Membership Sign-Up</h5>
                             { (errorMesg !== "") ? (
                                 <div className="alert alert-danger" role="alert">
-                                    { errorMesg }
+                                    { errorMesg}
                                 </div>
                             ) : null}
                             <form>
-
-                                    <div className="input-group mb-3">
-                                        <span className="input-group-text">First Name</span>
-                                        <input type="text" name="firstname" value={user.firstname} required onChange={(e) => this.handleChange(e)} className="form-control"  ></input>
-                                    </div>
-                                    <div className="input-group mb-3">
-                                        <span className="input-group-text">Last Name</span>
-                                        <input type="text" name="lastname" value={user.lastname} required onChange={(e) => this.handleChange(e)} className="form-control" ></input>
-                                    </div>
-                                    <div className="input-group mb-3">
-                                        <span className="input-group-text">{`Email    `}</span>
-                                        <input type="email" name="email" value={user.email} required onChange={(e) => this.handleChange(e)} className="form-control"  ></input>
-                                    </div>
-                                    <div className="input-group mb-3">
-                                        <span className="input-group-text">Password</span>
-                                        <input type="password" name="password" value={user.password} required onChange={(e) => this.handleChange(e)} className="form-control" ></input>
-                                    </div>
-                                    <div className="center">
-                                        <button className="btn btn-primary" onClick={(e) => this.handleSubmit(e)} type="button">Sign Up</button> {`  `}
-                                        <button className="btn btn-secondary" onClick={(e) => this.handleReset(e)} type="button">Reset</button>
-                                    </div>
-
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text">First Name</span>
+                                    <input type="text" name="firstname" value={user.firstname} required onChange={(e) => this.handleChange(e)} className="form-control"  ></input>
+                                </div>
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text">Last Name</span>
+                                    <input type="text" name="lastname" value={user.lastname} required onChange={(e) => this.handleChange(e)} className="form-control" ></input>
+                                </div>
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text">Your Email</span>
+                                    <input type="email" name="email" value={user.email} required onChange={(e) => this.handleChange(e)} className="form-control"  ></input>
+                                </div>
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text">Password</span>
+                                    <input type="password" name="password" value={user.password} required onChange={(e) => this.handleChange(e)} className="form-control" ></input>
+                                </div>
+                                <div className="center">
+                                    <button className="btn btn-primary" onClick={(e) => this.handleSubmit(e)} type="button">Sign Up</button> {`  `}
+                                    <button className="btn btn-secondary" onClick={(e) => this.handleReset(e)} type="button">Reset</button>
+                                </div>
                             </form>
                         </div>
                     ) : (
-                            <div className="col-4 registrationpage">
-                                <h5>Your profile have been registered. Thank You.
-                            <span>Click <a href="/loginpage">here</a> to login.</span>
-                                </h5>
+                            <div className="col-3 registrationpage">
+                                <h6>Your profile have been registered. Thank You.</h6>
+                                <div>Click <Link to="/loginpage">here</Link> to login.</div>
+                                
                             </div>
                         )}
                 </div>

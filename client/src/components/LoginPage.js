@@ -49,18 +49,16 @@ class LoginPage extends Component {
             });
     }
 
-    handleSubmit(e) {
+    handleSubmit = (e) => {
         const { email, password } = this.state;
 
         e.preventDefault();
-        this.setState({ errorMesg: "" });
+
         if (email === "" || password === "") {
             this.setState({ errorMesg: "All fields are required. Please provide the information." });
             return;
-        }
-
-        if (this.state.errorMesg === "")
-            this.userSignin();
+        } 
+        this.userSignin();
     }
 
     render() {
@@ -94,7 +92,7 @@ class LoginPage extends Component {
                             </form>
                         </div>
                     ) : (
-                            <div className="col-4 loginpage">
+                            <div className="col-3 loginpage">
                                 <h6>You have logged in. Click to continue -</h6>
                                 <div><Link to="/landingpage"> Member Page </Link></div>
 
