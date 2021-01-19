@@ -105,6 +105,7 @@ p {
 h5 {
   font-family: 'Poppins', sans-serif;
   padding-top: 8px;
+  color: #b60505;
 }
 
 h4 {
@@ -130,6 +131,9 @@ h4 {
 .loginpage .btn-primary {
   margin-bottom: 20px;
   width: 65%;
+}
+.registrationpage .btn {
+  width: 33%;
 }
 .loginpage .btn-primary, .registrationpage .btn-primary {
   background-color: #ca0202;
@@ -165,4 +169,8 @@ h4 {
 }
 .homewriteup p {
   font-size: 16px;
+}
+
+.input-group-text {
+  width: 6em;
 }

@@ -82,7 +82,7 @@ class App extends React.Component {
               ) : (
               <div className="inline">
                 <NavLink to="/landingpage">Restaurants</NavLink >
-                <NavLink to="/" onClick={() => this.logout()}> Logout </NavLink>
+                <NavLink to="/" onClick={() => this.logout()}>Logout</NavLink>
               </div>
               )}
             </div>

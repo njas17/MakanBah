@@ -9,7 +9,7 @@ Makan bah! project is to allow its users to search for nearby restaurants and ar
 
 **WHO**: Like to explore new food and restaurants.
 
-**THE**: Product    IS: A platform
+**THE**: Product    **IS**: A platform
 
 **THAT**: Delivers restaurant recommendations and has a personalised bucket-list
 
@@ -32,9 +32,9 @@ Makan bah! project is to allow its users to search for nearby restaurants and ar
 
 ### Feature Extension
 
-The feature extension consist of:
+**User Login** - The feature extension consist of:
 
-- New components: HomePage, LandingPage, LoginPage, RegistrationPage
+- Four new components: HomePage, LandingPage, LoginPage, RegistrationPage
 - Simple Navigation - using React Router, to show the differences for site user - logged in and not logged in.
 - User Registration - using bcrypt, to encrypt the password when stored in the database so it will be harder for an attacker to crack.
 - User Login - using JWT, as authentication token when user is logged in. sessionStorage - the session even when you refresh the page. If you want the page token/information is available on different tab of browser, localStorage can be use.

@@ -10,7 +10,6 @@ router.use(express.json());
 
 //insert a user
 router.post("/users", async (req, res, next) => {
-    //your code here
     try {
         const salt = await bcrypt.genSalt(7);
         const hashedPassword = await bcrypt.hash(req.body.password, salt);
@@ -31,7 +30,6 @@ router.post("/users", async (req, res, next) => {
 router.get("/users/:email", function (req, res, next) {
     db(`SELECT id, concat_ws(' ', firstname,lastname) as name, email, isAdmin, loginpw as password FROM user where email = '${req.params.email}';`)
         .then(results => {
-            //console.log(results[0].data);
             res.send(results.data);
         })
         .catch(err => res.status(500).send(err));
@@ -43,7 +41,7 @@ router.post('/signin', async function (req, res) {
     const user = req.body.email;
     const pwd = req.body.password;
     const userObj = req.body.user;
-    //console.log(userObj);
+
     // return 400 status if username/password is not exist
     if (!user || !pwd) {
         return res.status(400).json({
@@ -52,7 +50,6 @@ router.post('/signin', async function (req, res) {
         });
     }
 
-    //const user = users.find(user => user.email = user)
     if (!userObj) return res.status(400).send('Cannot find user');     
 
     try{
@@ -90,8 +87,6 @@ router.post('/verify-token', function (req, res) {
 
     // check token that was passed by decoding token using secret
     jwt.verify(token, process.env.JWT_SECRET, function (err, user) {
-        //console.log("testing");
-
         if (err) return res.status(401).json({
             error: true,
             message: "Invalid token."
