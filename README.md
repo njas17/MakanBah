@@ -30,7 +30,7 @@ Makan bah! original project was developed by Khalilah. This project is an extens
 ## Database Table Changes
 
 - Additional fields are introduced in the User table i.e. password, isAdmin fields (however admin is not used at the moment)
-- ![Additional field](usertbl.png)
+![Additional field](usertbl.png)
 
 ## Setup
 
