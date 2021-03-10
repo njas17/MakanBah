@@ -1,22 +1,10 @@
-# restaurant-recommendations
+# Makan Bah! Original Introduction (credit to @dasikha)
 
 Makan bah! is a restaurant recommendations website, which allows it's users to search for restaurants nearby them and also create a personalised bucket-list of their restaurant choices. The name "Makan bah!" was derived from the word "Makan", which means "Eat" in the English language, and "bah" from Sabahan slang which is a colloquial words used in Sabah, Malaysia. With Makan Bah!, you don't have to worry again where to eat next!
 
 ## Project Description
 
-Makan bah! project is to allow its users to search for nearby restaurants and are able to add restaurants into their bucket list for future visits.
-
-**FOR**: Foodies that have difficulties of figuring out where to have their next meals in Kota Kinabalu
-
-**WHO**: Like to explore new food and restaurants.
-
-**THE**: Product    **IS**: A platform
-
-**THAT**: Delivers restaurant recommendations and has a personalised bucket-list
-
-**UNLIKE**: Wasting time figuring out where to eat
-
-**OUR PRODUCT**: Saves users’ time and enhances users’ restaurant search experience
+Makan bah! original project was developed by Khalilah. This project is an extension to the original project from <https://github.com/dasikha/MakanBah>.
 
 ## MVP
 
@@ -31,18 +19,18 @@ Makan bah! project is to allow its users to search for nearby restaurants and ar
 
 #### Feature Reference/Credits
 
-- Web Dev Simplified: ![Youtube - JWT Authentication Tutorial - Node.js](https://www.youtube.com/watch?v=mbsmsi7l3r4)
-- Web Dev Simplified: ![Youtube - Build Node.js User Authentication - Password Login](https://www.youtube.com/watch?v=Ud5xKCYQTjM)
-- ![Implement Authentication in React App using Node.js](https://www.cluemediator.com/implement-login-authentication-in-react-app-using-node-js)
-- ![How To Add Login Authentication to React Applications](https://www.digitalocean.com/community/tutorials/how-to-add-login-authentication-to-react-applications#conclusion)
+- Web Dev Simplified: [Youtube - JWT Authentication Tutorial - Node.js](https://www.youtube.com/watch?v=mbsmsi7l3r4)
+- Web Dev Simplified: [Youtube - Build Node.js User Authentication - Password Login](https://www.youtube.com/watch?v=Ud5xKCYQTjM)
+- [Implement Authentication in React App using Node.js](https://www.cluemediator.com/implement-login-authentication-in-react-app-using-node-js)
+- [How To Add Login Authentication to React Applications](https://www.digitalocean.com/community/tutorials/how-to-add-login-authentication-to-react-applications#conclusion)
 - BCRYPT
 - React-Router
 - JWT
 
-## Database Changes
+## Database Table Changes
 
-- Additional fields are introduced in the User table i.e. password, isAdmin fields
-- ![DB Schema](databaseschema.png)
+- Additional fields are introduced in the User table i.e. password, isAdmin fields (however admin is not used at the moment)
+- ![Additional field](usertbl.png)
 
 ## Setup
 
