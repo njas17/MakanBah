@@ -17,7 +17,7 @@ Makan bah! original project was developed by Khalilah. This project is an extens
 - User Registration - using bcrypt, to encrypt the password when stored in the database so it will be harder for an attacker to crack.
 - User Login - using JWT, as authentication token when user is logged in. sessionStorage - the session even when you refresh the page. If you want the page token/information is available on different tab of browser, localStorage can be use.
 
-#### Feature Reference/Credits
+#### Feature References/Credits
 
 - Web Dev Simplified: [Youtube - JWT Authentication Tutorial - Node.js](https://www.youtube.com/watch?v=mbsmsi7l3r4)
 - Web Dev Simplified: [Youtube - Build Node.js User Authentication - Password Login](https://www.youtube.com/watch?v=Ud5xKCYQTjM)
@@ -69,8 +69,8 @@ Makan bah! original project was developed by Khalilah. This project is an extens
 - [ ] Get your API Key from [here](https://developers.google.com/places/web-service/get-api-key)
 Follow all the steps in the link:
 
-1. Creating API keys, 
-2. Adding the API key to your request, 
+1. Creating API keys
+2. Adding the API key to your request
 3. Restricting API keys
 
 ### Display a list of restaurants in your front-end
